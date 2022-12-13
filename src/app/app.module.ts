@@ -13,6 +13,7 @@ import {HeaderComponent} from './components/header/header.component';
 import {FooterComponent} from './components/footer/footer.component';
 import {EmployeeChildComponent} from "./components/employee-child/employee-child.component";
 import {EmployeeCharacteristicsComponent} from "./components/employee-characteristics/employee-characteristics.component";
+import {JumbotronComponent} from "./components/jumbotron/jumbotron.component";
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonToggleModule} from "@angular/material/button-toggle";
@@ -37,7 +38,8 @@ import {MatBottomSheetModule} from "@angular/material/bottom-sheet";
     EducationComponent,
     EmployeeChildComponent,
     EmployeeCharacteristicsComponent,
-    EmployeeChildComponent
+    EmployeeChildComponent,
+    JumbotronComponent
   ],
   imports: [
     BrowserModule,
