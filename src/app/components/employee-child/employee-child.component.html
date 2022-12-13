@@ -1,0 +1,27 @@
+<div>
+  <div>
+    {{i_x + 1}}. {{ employee_x.name}} {{employee_x.lastName}} {{employee_x.cargo}} {{employee_x.salary}}
+  </div>
+</div>
+
+<!-- https://angular.io/guide/inputs-outputs#configuring-the-parents-template
+1. In the parent's template, bind the parent's method to the child's event.
+2. Put the child selector, here <app-item-output>, within the parent
+    component's template, app.component.html.
+-->
+<!-- <app-item-output (newEmployeeCharacteristicEvent)="addItem($event)"></app-item-output> -->
+<app-employee-characteristics (newEmployeeCharacteristicEvent)="addItem($event)"></app-employee-characteristics>
+<!--The event binding, (newEmployeeCharacteristicEvent)='addItem($event)', connects the event in
+ the child, newEmployeeCharacteristicEvent, to the method in the parent, addItem().
+
+The $event contains the data that the user types into the <input> in the child
+ template UI.
+-->
+<!--To see the @Output() working, add the following to the parent's template:-->
+<ul style="list-style: none">
+  <li *ngFor="let item of items">{{item}}</li>
+</ul>
+<!--The *ngFor iterates over the items in the items array.
+ When you enter a value in the child's <input> and click the button, the
+  child emits the event and the parent's addItem() method pushes the value to
+   the items array and new item renders in the list.-->

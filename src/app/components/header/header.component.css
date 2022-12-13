@@ -1,0 +1,227 @@
+/*----------------------------------------------------------------------*/
+.toolbar {
+  /*position: absolute;*/
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: #3F51B5;
+  color: white;
+  font-weight: 600;
+}
+
+.toolbar img {
+  margin: 0 16px;
+}
+
+.toolbar #twitter-logo {
+  height: 40px;
+  margin: 0 8px;
+}
+
+.toolbar #youtube-logo {
+  height: 40px;
+  margin: 0 16px;
+}
+
+.toolbar #twitter-logo:hover,
+.toolbar #youtube-logo:hover {
+  opacity: 0.8;
+}
+
+#ap-logo:hover,
+#male-technologist:hover {
+  opacity: 0.7;
+}
+
+/*----------------------------------------------------------------------*/
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+/*----------------------------------------------------------------------*/
+/* Main */
+/* this is called from id="menu" */
+#menu {
+  background: #3F51B5;
+  border-radius: 5px;
+  list-style: none;
+  margin: 0.3%;
+  padding: 0.3%;
+}
+
+#menu li {
+  float: left;
+  margin: 0.1%;
+  padding: 0.1%;
+  position: relative;
+}
+
+#menu a {
+  color: #999;
+  float: left;
+  font: bold 11px/16px Arial, Helvetica;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#menu li:hover > a {
+  color: #fafafa;
+}
+
+#menu li:hover > ul {
+  display: block;
+}
+
+/*----------------------------------------------------------------------*/
+.spacer {
+  flex: 1;
+}
+
+/*----------------------------------------------------------------------*/
+/* this is called from the class */
+.menu {
+  background: #3F51B5;
+  border-radius: 5px;
+  list-style: none;
+  margin: 0.3%;
+  padding: 0.3%;
+}
+
+.menu li {
+  float: left;
+  margin: 0.1%;
+  padding: 0.1%;
+  position: relative;
+}
+
+.menu a {
+  color: #999;
+  float: left;
+  font: bold 11px/16px Arial, Helvetica;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu li:hover > a {
+  color: #fafafa;
+}
+
+.menu li:hover > ul {
+  display: block;
+}
+
+/*----------------------------------------------------------------------*/
+/* Sub-menu */
+#menu ul {
+  background: #3F51B5;
+  border-radius: 5px;
+  display: none;
+  /*left: 0;*/
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 21px;
+  z-index: 99999;
+}
+
+#menu ul li {
+  float: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  /*-moz-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+  -webkit-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+  box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;*/
+}
+
+#menu ul li:last-child {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#menu ul a {
+  display: block;
+  float: none;
+  height: auto;
+  line-height: 1;
+  padding: 10px;
+  text-transform: none;
+  white-space: nowrap;
+}
+
+* html #menu ul a { /* IE6 */
+  height: 10px;
+  width: 150px;
+}
+
+*:first-child + html #menu ul a { /* IE7 */
+  height: 10px;
+  width: 150px;
+}
+
+#menu ul a:hover {
+  background: #344293;
+}
+
+#menu ul li:first-child a {
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+}
+
+#menu ul li:first-child a:after {
+  border-bottom: 8px solid #444;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  content: '';
+  height: 0;
+  left: 30px;
+  position: absolute;
+  top: -8px;
+  width: 0;
+}
+
+#menu ul li:first-child a:hover:after {
+  border-bottom-color: #04acec;
+}
+
+#menu ul li:last-child a {
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+}
+
+/*----------------------------------------------------------------------*/
+/* Clear floated elements */
+#menu:after {
+  clear: both;
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+/*----------------------------------------------------------------------*/
+a, a:visited, a:hover {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #125699;
+
+}
