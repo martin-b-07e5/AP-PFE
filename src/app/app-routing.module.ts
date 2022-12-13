@@ -1,11 +1,10 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
+import {HomeComponent} from './components/home/home.component';
 import {EducationComponent} from "./components/education/education.component";
-import { ProjectComponent } from './components/project/project.component';
-import { AboutComponent } from './components/about/about.component';
-import { ContactComponent } from './components/contact/contact.component';
-import { AppComponent } from './components/app/app.component';
+import {ProjectComponent} from './components/project/project.component';
+import {AboutComponent} from './components/about/about.component';
+import {ContactComponent} from './components/contact/contact.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -14,12 +13,11 @@ const routes: Routes = [
   {path: 'project', component: ProjectComponent},
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactComponent},
-  // {path: 'app', component: AppComponent},
-
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}
