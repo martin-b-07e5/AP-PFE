@@ -4,5 +4,11 @@
   /*top: 4em;*/
   /*z-index: 1020;*/
 
-    padding-top: 1.5em;
+    /*padding-top: 1.5em;*/
 }
+
+/*@media (max-width: 1200px) {
+  * {
+    background-color: lightblue;
+  }
+}*/
