@@ -8,11 +8,20 @@ import {Router} from '@angular/router';
 })
 export class ProjectComponent {
 
+  // inyectamos en el constructor, el servicio Router
   constructor(private router: Router) {
   }
 
   volverHome() {
-    this.router.navigate(['']);
+    // usamos el enrutamiento hacia el home
+    // this.router.navigate(['']);
+    this.router.navigate(['']).then(() => this.removeSpinner());
+  }
+
+  // this.router.navigateByUrl('/login').then(_ => { removeSpinner(); });
+
+  removeSpinner() {
+    console.log("promesa cumplida");
   }
 
 }
