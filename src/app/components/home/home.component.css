@@ -22,6 +22,7 @@ p {
 }
 
 /*----------------------------------------------------------------------*/
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction */
 .content {
   display: flex;
   margin: 40px auto 32px;
