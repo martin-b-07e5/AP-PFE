@@ -43,9 +43,9 @@
       <!--<button (click)="agregarEmpleado()" color="primary" mat-raised-button
               type="submit"
       >-->
-      <button (click)="agregarEmpleado(); submitForm()" class="btn btn-primary"
-              type="submit"
-      >
+      <button (click)="agregarEmpleado(); submitForm(); volverHome()"
+              class="btn btn-primary"
+              type="submit">
         Agregar
       </button>
 
@@ -62,7 +62,8 @@
   <br>
   <span>volver home2</span>
   <button class="btn btn-primary btn-sm my-3 mx-3" type="button"
-          routerLink="/">home2</button>
+          routerLink="/">home2
+  </button>
 
   <br>
   <span>volver home3</span>
