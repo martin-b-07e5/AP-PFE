@@ -14,6 +14,7 @@ import {FooterComponent} from './components/footer/footer.component';
 import {EmployeeChildComponent} from "./components/employee-child/employee-child.component";
 import {EmployeeCharacteristicsComponent} from "./components/employee-characteristics/employee-characteristics.component";
 import {JumbotronComponent} from "./components/jumbotron/jumbotron.component";
+import { UpdateComponentComponent } from './components/update-component/update-component.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonToggleModule} from "@angular/material/button-toggle";
@@ -30,20 +31,21 @@ import {MatBottomSheetModule} from "@angular/material/bottom-sheet";
   declarations: [
     AppComponent,
     HomeComponent,
+    EducationComponent,
+    ProjectComponent,
     AboutComponent,
     ContactComponent,
-    FooterComponent,
     HeaderComponent,
-    ProjectComponent,
-    EducationComponent,
+    FooterComponent,
     EmployeeChildComponent,
     EmployeeCharacteristicsComponent,
-    EmployeeChildComponent,
-    JumbotronComponent
+    JumbotronComponent,
+    UpdateComponentComponent
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
+    FormsModule,
     BrowserAnimationsModule,
     MatButtonToggleModule,
     MatProgressSpinnerModule,
@@ -53,7 +55,6 @@ import {MatBottomSheetModule} from "@angular/material/bottom-sheet";
     MatButtonModule,
     MatSlideToggleModule,
     MatBadgeModule,
-    FormsModule,
     MatBottomSheetModule
   ],
   providers: [],
