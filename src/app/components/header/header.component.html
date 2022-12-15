@@ -1,10 +1,15 @@
 <!-- bs Toolbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top
+my-0 mx-0">
 
   <div class="container-fluid">
 
+
     <!-- AP Logo (home)-->
-    <a class="navbar-brand" routerLink="/" routerLinkActive="active">
+    <a class="navbar-brand" routerLink="/" routerLinkActive="active"
+       data-bs-toggle="collapse"
+       data-bs-target="#navbarColor01"
+    >
       <img
         class=""
         alt="AP Logo"
@@ -28,7 +33,10 @@
     </button>
 
     <!-- (educ/projects/about/contact) + (github -- Sign in/up) -->
-    <div class="collapse navbar-collapse" id="navbarColor01">
+    <div class="collapse navbar-collapse" id="navbarColor01"
+         data-bs-toggle="collapse"
+         data-bs-target="#navbarColor01"
+    >
 
       <!-- educ/projects/about/contact -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
