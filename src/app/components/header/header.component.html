@@ -4,7 +4,10 @@
   <div class="container-fluid">
 
     <!-- AP Logo (home)-->
-    <a class="navbar-brand" routerLink="/" routerLinkActive="active"
+    <!-- collapse with home btn when < 600px -->
+    <a class="navbar-brand"
+       routerLink="/" routerLinkActive="active"
+       media='screen and (max-width: 600px)'
        data-bs-toggle="collapse"
        data-bs-target="#navbarColor01"
     >
@@ -20,12 +23,12 @@
 
     <!-- btn toggler FOR SMALL SCREENS -->
     <button type="button"
-      class="navbar-toggler"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarColor01"
-      aria-controls="navbarColor01"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarColor01"
+            aria-controls="navbarColor01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
     >
       <span class="navbar-toggler-icon"></span>
 
