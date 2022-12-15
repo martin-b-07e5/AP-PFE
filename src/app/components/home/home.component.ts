@@ -35,7 +35,6 @@ export class HomeComponent implements OnInit {
    el servicio myService de tipo EmployeeServiceService y
    el servicio myEmployeeService de tipo EmployeeService
    */
-
   constructor(private myService: EmployeeServiceService, private myEmployeeService: EmployeeService) {
     // this.cuadroSalario = 0;
     this.cuadroSalario = Number("");
@@ -52,7 +51,6 @@ export class HomeComponent implements OnInit {
     // movemos push tb a employee.service.ts
     // this.employees.push(myEmployee); // Agregar myEmployee al array employees
     this.myEmployeeService.agregarEmpleadoService(myEmployee); // service injected
-
   }
 
   // empty elements after submitForm
