@@ -18,102 +18,13 @@
       el div completo restante, se pega en employee-child.component.html
     -->
 
-    <!-- original -->
-    <!--<div>
-      <h3>Empleados</h3>
-      <div *ngFor="let empleado of employees let i=index">
-        {{i + 1}}. {{ empleado.name}} {{empleado.lastName}} {{empleado.cargo}} {{empleado.salary}}
-      </div>
-    </div>-->
-
   </div>
 
 
-  <!-- probando cosas1 -->
-  <!--  https://material.angular.io/components/button-toggle/overview -->
+  <!-- probando cosas1
+    https://material.angular.io/components/button-toggle/overview
+  -->
   <div style="max-width: 100%; min-width: 60%;">
-
-    <hr>
-    <!-- search input and button -->
-    <div>
-      <!-- search input -->
-      <h2 style="text-align: center"> PROBANDO COSAS1 </h2>
-      <h3> Search input </h3>
-      <div class="input-group w-50">
-      <span class="input-group-text" id="basic-addon1">
-        <i class="bi bi-search"></i>
-      </span>
-        <input aria-describedby="basic-addon1" aria-label="Input group example"
-               class="form-control" placeholder="Input group example"
-               type="text">
-      </div>
-
-      <!-- button -->
-      <h3> Button </h3>
-      <button class="btn btn-primary" type="button">
-        <i class="bi bi-clock"></i>
-        Button
-      </button>
-    </div>
-
-    <hr>
-    <!--  badges  -->
-    <div>
-      <h2>Badges</h2>
-      <div class="demo-section" matBadge="4" matBadgeOverlap="false">Text with a badge</div>
-
-      <div class="demo-section" matBadge="1" matBadgeSize="large">Text with large badge</div>
-
-      <div class="demo-section">
-        Button with a badge on the left
-        <button color="primary" mat-raised-button
-                matBadge="8" matBadgeColor="accent" matBadgePosition="before">
-          Action
-        </button>
-      </div>
-
-      <div class="demo-section">
-        Button toggles badge visibility
-        <!--<button (click)="toggleBadgeVisibility()" [matBadgeHidden]="hidden" mat-raised-button matBadge="7">
-          Hide
-        </button>-->
-      </div>
-
-      <div class="demo-section">
-        Icon with a badge
-        <mat-icon matBadge="15" matBadgeColor="warn">home</mat-icon>
-        <!-- Include text description of the icon's meaning for screen-readers -->
-        <span class="cdk-visually-hidden">
-      Example with a home icon with overlaid badge showing the number 15
-    </span>
-      </div>
-    </div>
-
-    <hr>
-    <!-- Buttons -->
-    <div>
-      <h3>Button toggle selection mode</h3>
-      <h4>Basic button-toggles</h4>
-      <mat-button-toggle-group aria-label="Font Style" name="fontStyle">
-        <mat-button-toggle value="bold">Bold</mat-button-toggle>
-        <mat-button-toggle value="italic">Italic</mat-button-toggle>
-        <mat-button-toggle value="underline">Underline</mat-button-toggle>
-      </mat-button-toggle-group>
-
-      <h4>Single selection</h4>
-      <mat-button-toggle-group aria-label="Favorite Color" name="favoriteColor">
-        <mat-button-toggle value="red">Red</mat-button-toggle>
-        <mat-button-toggle value="green">Green</mat-button-toggle>
-        <mat-button-toggle value="blue">Blue</mat-button-toggle>
-      </mat-button-toggle-group>
-
-      <h4>Multiple selection</h4>
-      <mat-button-toggle-group aria-label="Ingredients" multiple name="ingredients">
-        <mat-button-toggle value="flour">Flour</mat-button-toggle>
-        <mat-button-toggle value="eggs">Eggs</mat-button-toggle>
-        <mat-button-toggle value="sugar">Sugar</mat-button-toggle>
-      </mat-button-toggle-group>
-    </div>
 
     <hr>
     <!-- Spinner -->
