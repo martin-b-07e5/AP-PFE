@@ -1,11 +1,12 @@
 .sticky-top1 {
-  /*position: -webkit-sticky;*/
-  /*position: sticky ;*/
-  /*top: 4em;*/
-  /*z-index: 1020;*/
-
-    /*padding-top: 1.5em;*/
+  position: -webkit-sticky;
+  position: sticky ;
+  top: 5.1em;
+  z-index: 1020;
+  margin-bottom: 4em;
+  /*padding-top: 1.5em;*/
 }
+
 
 /*@media (max-width: 1200px) {
   * {

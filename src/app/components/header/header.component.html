@@ -1,7 +1,8 @@
 <!-- bs Toolbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top my-0 mx-0">
-
   <div class="container-fluid">
+
+    <div class="navbar">
 
     <!-- AP Logo (home)-->
     <!-- collapse with home btn when < 600px
@@ -12,7 +13,7 @@
        routerLink="/" routerLinkActive="active"
     >
       <img
-        class=""
+        class="me-0"
         alt="AP Logo"
         src="../../../assets/img/AP-216x78.png"
         height="29"
@@ -21,7 +22,16 @@
       >
     </a>
 
-    <!-- btn toggler FOR SMALL SCREENS -->
+    <!-- #yoProgramo   -->
+    <a class="nav-link"
+       href="https://www.argentina.gob.ar/produccion/argentina-programa/segunda-etapa"
+       rel="noopener" target="_blank" title="yoProgramo"
+    ><span>#yoProgramo</span>
+    </a>
+
+    </div>
+
+    <!-- toggler FOR SMALL SCREENS -->
     <button type="button"
             class="navbar-toggler"
             data-bs-toggle="collapse"
@@ -31,29 +41,30 @@
             aria-label="Toggle navigation"
     >
       <span class="navbar-toggler-icon"></span>
-
     </button>
 
     <!-- (educ/projects/about/contact) + (github -- Sign in/up) -->
-    <div class="collapse navbar-collapse" id="navbarColor01"
+    <div class="collapse navbar-collapse"
+         id="navbarColor01"
          data-bs-toggle="collapse"
          data-bs-target="#navbarColor01"
     >
 
       <!-- educ/projects/about/contact -->
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav mb-0">
+
+        <!-- #Education -->
         <li class="nav-item">
-          <a class="nav-link active" title="Education" routerLink="/education">Education</a>
+          <a class="nav-link" title="Education" routerLink="/education">Education</a>
         </li>
+        <!-- #Projects -->
         <li class="nav-item">
           <a class="nav-link" title="Projects" routerLink="/project">Projects</a>
         </li>
+        <!-- #About -->
         <li class="nav-item">
           <a class="nav-link" title="About" routerLink="/about">About</a>
         </li>
-        <!--<li class="nav-item">
-          <a class="nav-link" routerLink="/contact">Contact</a>
-        </li>-->
       </ul>
 
       <!-- spacer -->
@@ -62,7 +73,7 @@
       <!-- Contact -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" title="Contact" routerLink="/contact">Contact</a>
+          <a class="nav-link active" title="Contact" routerLink="/contact">Contact</a>
         </li>
       </ul>
 
@@ -135,13 +146,12 @@
     </div>
 
   </div>
-
 </nav>
 
 <!-- Toolbar secondary -->
-<!--<div class="toolbar" role="banner">
+<div class="toolbar" role="banner">
 
-  &lt;!&ndash; logo &ndash;&gt;
+  <!-- logo -->
   <a href="#">
     <img
       alt="Me Logo"
@@ -152,10 +162,10 @@
     >
   </a>
 
-  &lt;!&ndash;  left&ndash;&gt;
+  <!--  left-->
   <div class="sticky">
     <ul id="menu">
-      &lt;!&ndash;      <li><a href="#">Home</a></li>&ndash;&gt;
+      <!--      <li><a href="#">Home</a></li>-->
       <li><a href="#">Work</a>
         <ul>
           <li><a href="#">CSS Development</a></li>
@@ -166,21 +176,21 @@
       </li>
       <li><a href="#">Studies</a></li>
       <li><a href="#">About</a></li>
-      <li><a href="#"></a></li> &lt;!&ndash; doesn't work without this line &ndash;&gt;
-      &lt;!&ndash;      <li style="float: right;"><a href="#">Feedback</a></li>&ndash;&gt;
+      <li><a href="#"></a></li> <!-- doesn't work without this line -->
+      <!--      <li style="float: right;"><a href="#">Feedback</a></li>-->
     </ul>
   </div>
 
-  &lt;!&ndash; spacer &ndash;&gt;
+  <!-- spacer -->
   <div class="spacer"></div>
 
-  &lt;!&ndash;  right&ndash;&gt;
-  &lt;!&ndash; contact &ndash;&gt;
+  <!--  right-->
+  <!-- contact -->
   <ul class="menu">
     <li style="float: right;"><a href="#">Contact</a></li>
   </ul>
 
-  &lt;!&ndash; twitter-YouTube logos &ndash;&gt;
+  <!-- twitter-YouTube logos -->
   <a aria-label="Angular on twitter" href="https://twitter.com/angular"
      rel="noopener" target="_blank" title="Twitter">
     <svg data-name="Logo" height="24" id="twitter-logo" viewBox="0 0 400 400"
@@ -201,4 +211,4 @@
     </svg>
   </a>
 
-</div>-->
+</div>
