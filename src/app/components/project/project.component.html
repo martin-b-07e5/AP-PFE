@@ -1,65 +1,13 @@
-<!--<div style="text-align: center; padding-top: 70px">-->
 <div class="container mx-5 px-5">
 
-  <!-- Title & form -->
-  <div style="text-align: center">
-
-    <h1>{{ title }}</h1>
-
-    <!--form (Titles)-->
-    <form class="form form-group row">
-      <!-- Nombre -->
-      <div class="form-group col-md-3">
-        <label for="nombre">Nombre: </label>
-        <input [(ngModel)]="cuadroNombre" class="form-control"
-               id="nombre" name="nombre"
-               placeholder="Nombre" type="text">
-      </div>
-      <!-- Apellido -->
-      <div class="form-group col-md-3">
-        <label for="nombre">Apellido: </label>
-        <input [(ngModel)]="cuadroApellido" class="form-control"
-               id="apellido" name="apellido"
-               placeholder="Apellido" type="text">
-      </div>
-      <!-- Cargo -->
-      <div class="form-group col-md-3">
-        <label for="nombre">Cargo: </label>
-        <input [(ngModel)]="cuadroCargo" class="form-control"
-               id="cargo" name="cargo"
-               placeholder="Cargo" type="text">
-      </div>
-      <!-- Salario -->
-      <div class="form-group col-md-3">
-        <label for="nombre">Salario: </label>
-        <input [(ngModel)]="cuadroSalario" class="form-control"
-               id="salario" name="salario"
-               placeholder="Salario" type="text">
-      </div>
-    </form>
-
-    <!-- Button -->
-    <div class="col" style="text-align: left; margin-top: 1rem; margin-bottom: 1rem">
-      <!--<button (click)="agregarEmpleado()" color="primary" mat-raised-button
-              type="submit"
-      >-->
-      <button (click)="agregarEmpleado(); submitForm(); volverHome()"
-              class="btn btn-primary"
-              type="submit">
-        Agregar
-      </button>
-
-    </div>
-
-  </div>
-
   <span>volver home1 (function)</span>
-  <button class="btn btn-primary btn-sm my-3 mx-3" type="button"
-          (click)="volverHome()">
-    home1
+  <button type="button"
+          class="btn btn-primary btn-sm my-3 mx-3"
+          (click)="volverHome()"
+  >home1
   </button>
 
-  <br>
+  <!--<br>
   <span>volver home2</span>
   <button class="btn btn-primary btn-sm my-3 mx-3" type="button"
           routerLink="/">home2
@@ -68,6 +16,6 @@
   <br>
   <span>volver home3</span>
   <a class="btn btn-danger btn-sm my-3 mx-3"
-     routerLink="/">home3</a>
+     routerLink="/">home3</a>-->
 
 </div>

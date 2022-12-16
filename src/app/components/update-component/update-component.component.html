@@ -1,56 +1,52 @@
 <!-- content -->
-<div class="container mt-3 pt-3">
+<div class="container">
 
-  <!-- app-employees -->
-  <div class="container mx-2 px-2">
+  <!-- Title & form -->
+  <div class="mx-2 px-2">
 
-    <!-- Title & form -->
-    <div style="text-align: center">
+    <h1>{{ title }}</h1>
 
-      <h1>{{ title }}</h1>
-
-      <!--form (Titles)-->
-      <form class="form form-group row">
-        <!-- Nombre -->
-        <div class="form-group col-md-3">
-          <label for="nombre">Nombre: </label>
-          <input [(ngModel)]="cuadroNombre" class="form-control"
-                 id="nombre" name="nombre"
-                 placeholder="Nombre" type="text">
-        </div>
-        <!-- Apellido -->
-        <div class="form-group col-md-3">
-          <label for="nombre">Apellido: </label>
-          <input [(ngModel)]="cuadroApellido" class="form-control"
-                 id="apellido" name="apellido"
-                 placeholder="Apellido" type="text">
-        </div>
-        <!-- Cargo -->
-        <div class="form-group col-md-3">
-          <label for="nombre">Cargo: </label>
-          <input [(ngModel)]="cuadroCargo" class="form-control"
-                 id="cargo" name="cargo"
-                 placeholder="Cargo" type="text">
-        </div>
-        <!-- Salario -->
-        <div class="form-group col-md-3">
-          <label for="nombre">Salario: </label>
-          <input [(ngModel)]="cuadroSalario" class="form-control"
-                 id="salario" name="salario"
-                 placeholder="Salario" type="text">
-        </div>
-      </form>
-
-      <!-- Button -->
-      <div class="col my-3 text-start">
-        <button (click)="agregarEmpleado(); submitForm()"
-                class="btn btn-primary"
-                type="submit"
-        >Agregar
-        </button>
+    <!--form (Titles)-->
+    <form class="form form-group row">
+      <!-- Nombre -->
+      <div class="form-group col-md-3">
+        <label for="nombre">Nombre: </label>
+        <input [(ngModel)]="cuadroNombre" class="form-control"
+               id="nombre" name="nombre"
+               placeholder="Nombre" type="text">
       </div>
+      <!-- Apellido -->
+      <div class="form-group col-md-3">
+        <label for="nombre">Apellido: </label>
+        <input [(ngModel)]="cuadroApellido" class="form-control"
+               id="apellido" name="apellido"
+               placeholder="Apellido" type="text">
+      </div>
+      <!-- Cargo -->
+      <div class="form-group col-md-3">
+        <label for="nombre">Cargo: </label>
+        <input [(ngModel)]="cuadroCargo" class="form-control"
+               id="cargo" name="cargo"
+               placeholder="Cargo" type="text">
+      </div>
+      <!-- Salario -->
+      <div class="form-group col-md-3">
+        <label for="nombre">Salario: </label>
+        <input [(ngModel)]="cuadroSalario" class="form-control"
+               id="salario" name="salario"
+               placeholder="Salario" type="text">
+      </div>
+    </form>
 
+    <!-- Button -->
+    <div class="col my-3 text-start">
+      <button (click)="agregarEmpleado(); submitForm(); volverHome()"
+              class="btn btn-primary"
+              type="submit"
+      >Agregar
+      </button>
     </div>
+
   </div>
 
 </div>

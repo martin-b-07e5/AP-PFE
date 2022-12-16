@@ -1,9 +1,15 @@
-<div>
-  <div>
-    {{i_x + 1}}. {{ employee_x.name}} {{employee_x.lastName}} {{employee_x.cargo}} {{employee_x.salary}}
+<div class="container">
+  <div class="row">
+    <div class="col">
+      {{i_x + 1}}.
+      <a [routerLink]="['/update',i_x]">
+        {{ employee_x.name}} {{employee_x.lastName}}
+      </a>
+      {{employee_x.cargo}} {{employee_x.salary}}
+
+    </div>
   </div>
 </div>
-
 <!-- https://angular.io/guide/inputs-outputs#configuring-the-parents-template
 1. In the parent's template, bind the parent's method to the child's event.
 2. Put the child selector, here <app-item-output>, within the parent
