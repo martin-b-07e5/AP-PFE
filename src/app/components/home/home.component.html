@@ -1,10 +1,8 @@
 <!-- content -->
-<div class="content" role="main">
+<div class="container">
 
-  <!-- app-employees -->
+  <!-- Employees characteristics -->
   <div class="container my-0 mx-2 py-0 px-2">
-
-
     <h2>Employees characteristics</h2>
     <app-employee-child
       *ngFor="let empleado of employeesArray let i=index"
@@ -12,31 +10,19 @@
       [i_x]="i"
     >
     </app-employee-child>
-
-    <!-- Empleados ngFor
-      El ngFor se coloca arriba, en <app-employee-child>
-      el div completo restante, se pega en employee-child.component.html
-    -->
-
   </div>
 
 
-  <!-- probando cosas1
-    https://material.angular.io/components/button-toggle/overview
-  -->
-  <div style="max-width: 100%; min-width: 60%;">
-
+  <!-- probando cosas1 -->
+  <!-- Spinner -->
+  <div>
     <hr>
-    <!-- Spinner -->
-    <div>
-      <h3>Spinner</h3>
-      <mat-spinner></mat-spinner>
-    </div>
-
+    <h2>Spinner</h2>
+    <mat-spinner></mat-spinner>
   </div>
 
   <!-- probando cosas2 -->
-  <div style="max-width: 100%; min-width: 60%;">
+  <div>
 
     <!-- progress-bar -->
     <div>
@@ -134,66 +120,6 @@
             <button aria-label="Example icon button with a open in new tab icon" disabled mat-icon-button>
               <mat-icon>open_in_new</mat-icon>
             </button>
-          </div>
-        </div>
-      </section>
-      <br>
-      <mat-divider></mat-divider>
-      <!-- FAB -->
-      <section>
-        <div class="example-label">FAB</div>
-        <div class="example-button-row">
-          <div class="example-flex-container">
-            <div class="example-button-container">
-              <button aria-label="Example icon button with a delete icon" color="primary" mat-fab>
-                <mat-icon>delete</mat-icon>
-              </button>
-            </div>
-            <div class="example-button-container">
-              <button aria-label="Example icon button with a bookmark icon" color="accent" mat-fab>
-                <mat-icon>bookmark</mat-icon>
-              </button>
-            </div>
-            <div class="example-button-container">
-              <button aria-label="Example icon button with a home icon" color="warn" mat-fab>
-                <mat-icon>home</mat-icon>
-              </button>
-            </div>
-            <div class="example-button-container">
-              <button aria-label="Example icon button with a heart icon" disabled mat-fab>
-                <mat-icon>favorite</mat-icon>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <br>
-      <mat-divider></mat-divider>
-      <!-- Mini FAB -->
-      <section>
-        <div class="example-label">Mini FAB</div>
-        <div class="example-button-row">
-          <div class="example-flex-container">
-            <div class="example-button-container">
-              <button aria-label="Example icon button with a menu icon" color="primary" mat-mini-fab>
-                <mat-icon>menu</mat-icon>
-              </button>
-            </div>
-            <div class="example-button-container">
-              <button aria-label="Example icon button with a plus one icon" color="accent" mat-mini-fab>
-                <mat-icon>plus_one</mat-icon>
-              </button>
-            </div>
-            <div class="example-button-container">
-              <button aria-label="Example icon button with a filter list icon" color="warn" mat-mini-fab>
-                <mat-icon>filter_list</mat-icon>
-              </button>
-            </div>
-            <div class="example-button-container">
-              <button aria-label="Example icon button with a home icon" disabled mat-mini-fab>
-                <mat-icon>home</mat-icon>
-              </button>
-            </div>
           </div>
         </div>
       </section>
