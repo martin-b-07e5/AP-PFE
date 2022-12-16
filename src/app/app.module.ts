@@ -2,7 +2,7 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {FormsModule} from "@angular/forms";
 import {AppRoutingModule} from './app-routing.module';
-
+// Components
 import {AppComponent} from './components/app/app.component';
 import {HomeComponent} from './components/home/home.component';
 import {EducationComponent} from './components/education/education.component';
@@ -11,11 +11,11 @@ import {AboutComponent} from './components/about/about.component';
 import {ContactComponent} from './components/contact/contact.component';
 import {HeaderComponent} from './components/header/header.component';
 import {FooterComponent} from './components/footer/footer.component';
+import {BannerComponent} from "./components/banner/banner.component";
 import {EmployeeChildComponent} from "./components/employee-child/employee-child.component";
 import {EmployeeCharacteristicsComponent} from "./components/employee-characteristics/employee-characteristics.component";
-import {JumbotronComponent} from "./components/jumbotron/jumbotron.component";
 import { UpdateComponentComponent } from './components/update-component/update-component.component';
-
+// Material
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonToggleModule} from "@angular/material/button-toggle";
 import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
@@ -37,9 +37,9 @@ import {MatBottomSheetModule} from "@angular/material/bottom-sheet";
     ContactComponent,
     HeaderComponent,
     FooterComponent,
+    BannerComponent,
     EmployeeChildComponent,
     EmployeeCharacteristicsComponent,
-    JumbotronComponent,
     UpdateComponentComponent
   ],
   imports: [
