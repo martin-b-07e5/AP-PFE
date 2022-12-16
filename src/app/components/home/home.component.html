@@ -5,13 +5,12 @@
   <div class="container my-0 mx-2 py-0 px-2">
     <h2>Employees characteristics</h2>
     <app-employee-child
-      *ngFor="let empleado of employeesArray let i=index"
+      *ngFor="let empleado of employees let i=index"
       [employee_x]="empleado"
       [i_x]="i"
     >
     </app-employee-child>
   </div>
-
 
   <!-- probando cosas1 -->
   <!-- Spinner -->
