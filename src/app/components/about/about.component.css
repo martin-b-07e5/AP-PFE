@@ -1,3 +1,31 @@
+#nombre{
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+
+}
+
+/*estilo de la foto de perfil*/
+/*>576*/
+@media (min-width: 576px) {
+  #myPic{
+    position: absolute;
+    width: 15%;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px lightblue;
+  }
+}
+
+/*0<x>=575*/
+@media (max-width: 575px) {
+  #myPic{
+    position: absolute;
+    width: 15%;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px lightblue;
+  }
+}
+
 .belowCarousel {
   padding-top: 70px;
 }

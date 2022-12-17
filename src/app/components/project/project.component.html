@@ -1,21 +1,32 @@
-<div class="container mx-5 px-5">
+<div class="container">
+  <div class="row border border-5 border-opacity-25 text-center">
+    <div class="col border border-danger border-2 border-opacity-25 text-center">
 
-  <span>volver home1 (function)</span>
-  <button type="button"
-          class="btn btn-primary btn-sm my-3 mx-3"
-          (click)="volverHome()"
-  >home1
-  </button>
 
-  <!--<br>
-  <span>volver home2</span>
-  <button class="btn btn-primary btn-sm my-3 mx-3" type="button"
-          routerLink="/">home2
-  </button>
+      <div class="border">
+        <span>function</span>
+        <button type="button"
+                class="btn btn-primary btn-sm my-3 mx-3"
+                (click)="volverHome()"
+        >go home1
+        </button>
+      </div>
 
-  <br>
-  <span>volver home3</span>
-  <a class="btn btn-danger btn-sm my-3 mx-3"
-     routerLink="/">home3</a>-->
+      <div class="border">
+        <span>button » routerLink</span>
+        <button class="btn btn-primary btn-sm my-3 mx-3" type="button"
+                routerLink="/">go to home2
+        </button>
+      </div>
 
+
+      <div class="border">
+        <span>anchor » routerLink</span>
+        <a class="btn btn-danger btn-sm my-3 mx-3"
+           routerLink="/">go to home3
+        </a>
+      </div>
+
+    </div>
+  </div>
 </div>

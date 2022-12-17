@@ -43,20 +43,19 @@ footer a {
 }
 
 /*----------------------------------------------------------------------*/
-div.fixed {
+div.fixed-right {
   position: fixed;
-  bottom: 5.9rem;
-  right: 0.8rem;
+  bottom: 1.5rem;
+  right: 0.5rem;
   padding: 0.2rem;
-  border: 2px dashed #3F51B5;
+  border: 2px dashed #0D6EFD;
   color: #3F51B5;
 }
 
-div.fixed2 {
+div.fixed-left {
   position: fixed;
-  left: 0.8rem;
   bottom: 0.5rem;
-  text-align: left;
+  left: 0.5rem;
 }
 
 /*----------------------------------------------------------------------*/
