@@ -235,6 +235,6 @@ a, a:visited, a:hover {
 }
 
 a:hover {
-  /*color: #125699;*/
-  color: red;
+  color: #125699;
+  /*color: red;*/
 }
