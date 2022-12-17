@@ -6,6 +6,10 @@ div {
   background: #EEEEEE;
 }
 
+div, #experiencia {
+  background: lightcyan;
+}
+
 h2, h3 {
   display: inline;
 }

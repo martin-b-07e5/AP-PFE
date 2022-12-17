@@ -1,4 +1,4 @@
-#nombre{
+#nombre {
   margin-top: 10px;
   font-size: 1rem;
   font-weight: bold;
@@ -7,7 +7,7 @@
 /*estilo de la foto de perfil*/
 /*0<x<=575*/
 @media (max-width: 575px) {
-  #myPic{
+  #myPic {
     position: absolute;
     width: 15%;
     border-radius: 100%;
@@ -17,9 +17,10 @@
 
 /*>576*/
 @media (min-width: 576px) {
-  #myPic{
+  #myPic {
     position: absolute;
-    width: 15%;
+    /*width: 6rem;*/
+    height: 15%;
     border-radius: 100%;
     box-shadow: 3px 3px 3px lightblue;
   }
