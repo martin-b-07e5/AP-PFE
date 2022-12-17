@@ -5,16 +5,20 @@ import {AppRoutingModule} from './app-routing.module';
 // Components
 import {AppComponent} from './components/app/app.component';
 import {HomeComponent} from './components/home/home.component';
+import {AboutComponent} from './components/about/about.component';
+import {ExperienceComponent} from './components/experience/experience.component';
 import {EducationComponent} from './components/education/education.component';
 import {ProjectComponent} from './components/project/project.component';
-import {AboutComponent} from './components/about/about.component';
 import {ContactComponent} from './components/contact/contact.component';
 import {HeaderComponent} from './components/header/header.component';
 import {FooterComponent} from './components/footer/footer.component';
 import {BannerComponent} from "./components/banner/banner.component";
 import {EmployeeChildComponent} from "./components/employee-child/employee-child.component";
-import {EmployeeCharacteristicsComponent} from "./components/employee-characteristics/employee-characteristics.component";
-import { UpdateComponentComponent } from './components/update-component/update-component.component';
+import {
+  EmployeeCharacteristicsComponent
+} from "./components/employee-characteristics/employee-characteristics.component";
+import {UpdateComponentComponent} from './components/update-component/update-component.component';
+
 // Material
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonToggleModule} from "@angular/material/button-toggle";
@@ -31,9 +35,10 @@ import {MatBottomSheetModule} from "@angular/material/bottom-sheet";
   declarations: [
     AppComponent,
     HomeComponent,
+    AboutComponent,
+    ExperienceComponent,
     EducationComponent,
     ProjectComponent,
-    AboutComponent,
     ContactComponent,
     HeaderComponent,
     FooterComponent,

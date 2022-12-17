@@ -40,9 +40,10 @@
   margin: 0 16px;
 }
 
-.toolbar #twitter-logo:hover,
-.toolbar #youtube-logo:hover {
-  opacity: 0.8;
+#github-logo:hover,
+#twitter-logo:hover,
+#youtube-logo:hover {
+  opacity: 0.7;
 }
 
 #ap-logo:hover,
@@ -234,6 +235,6 @@ a, a:visited, a:hover {
 }
 
 a:hover {
-  color: #125699;
-
+  /*color: #125699;*/
+  color: red;
 }

@@ -3,11 +3,13 @@
   position: sticky ;
   top: 5.1em;
   z-index: 1020;
-  margin-bottom: 4em;
+  margin-bottom: 7em;
   /*padding-top: 1.5em;*/
 }
 
-
+.belowCarousel {
+  padding-top: 70px;
+}
 /*@media (max-width: 1200px) {
   * {
     background-color: lightblue;

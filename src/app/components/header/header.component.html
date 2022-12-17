@@ -2,32 +2,33 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top my-0 mx-0">
   <div class="container-fluid">
 
+    <!-- Logo + #yoProgramo -->
     <div class="navbar">
 
-    <!-- AP Logo (home)-->
-    <!-- collapse with home btn when < 600px
-     https://www.w3schools.com/cssref/css3_pr_mediaquery.php
-     https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
-    -->
-    <a class="navbar-brand"
-       routerLink="/" routerLinkActive="active"
-    >
-      <img
-        class="me-0"
-        alt="AP Logo"
-        src="../../../assets/img/AP-216x78.png"
-        height="29"
-        id="ap-logo"
-        title="Go to Home Page"
+      <!-- AP Logo (home)-->
+      <!-- collapse with home btn when < 600px
+       https://www.w3schools.com/cssref/css3_pr_mediaquery.php
+       https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
+      -->
+      <a class="navbar-brand"
+         routerLink="/" routerLinkActive="active"
       >
-    </a>
+        <img
+          id="ap-logo"
+          class="me-0"
+          src="../../../assets/img/AP-216x78.png"
+          height="29"
+          title="Go to Home Page"
+          alt="AP Logo"
+        >
+      </a>
 
-    <!-- #yoProgramo   -->
-    <a class="nav-link"
-       href="https://www.argentina.gob.ar/produccion/argentina-programa/segunda-etapa"
-       rel="noopener" target="_blank" title="yoProgramo"
-    ><span>#yoProgramo</span>
-    </a>
+      <!-- #yoProgramo   -->
+      <a class="nav-link"
+         href="https://www.argentina.gob.ar/produccion/argentina-programa/segunda-etapa"
+         rel="noopener" target="_blank" title="yoProgramo"
+      ><span>#yoProgramo</span>
+      </a>
 
     </div>
 
@@ -57,9 +58,9 @@
         <li class="nav-item">
           <a class="nav-link" title="Education" routerLink="/education">Education</a>
         </li>
-        <!-- #Projects -->
+        <!-- #Experience -->
         <li class="nav-item">
-          <a class="nav-link" title="Projects" routerLink="/project">Projects</a>
+          <a class="nav-link" title="Experience" routerLink="/experience">Experience</a>
         </li>
         <!-- #About -->
         <li class="nav-item">
@@ -87,9 +88,12 @@
             <a aria-label="Me on github" href="https://github.com/martin-b-07e5"
                rel="noopener" target="_blank" title="Github"
             >
-              <img src="../../../assets/img/github-48.png" alt="github"
-                   height="35px"
-                   style="
+              <img
+                id="github-logo"
+                src="../../../assets/img/github-48.png"
+                alt="github"
+                height="35px"
+                style="
                   margin-right: 1em;
                 "
               >
@@ -97,19 +101,25 @@
             <!-- twitter logo -->
             <a aria-label="Angular on twitter" href="https://twitter.com/angular"
                rel="noopener" target="_blank" title="Twitter">
-              <img src="../../../assets/img/twitter-48.png" alt="twitter"
-                   height="35px"
-                   style="
-                margin-right: 1em;
-               "
+              <img
+                id="twitter-logo"
+                src="../../../assets/img/twitter-48.png"
+                alt="twitter"
+                height="35px"
+                style="
+                  margin-right: 1em;
+                "
               >
             </a>
             <!-- YouTube logo -->
             <a aria-label="Angular on YouTube" href="https://youtube.com/angular"
                rel="noopener" target="_blank" title="YouTube">
-              <img src="../../../assets/img/youtube-48.png" alt="Youtube"
-                   height="35px"
-                   style="
+              <img
+                id="youtube-logo"
+                src="../../../assets/img/youtube-48.png"
+                alt="Youtube"
+                height="35px"
+                style="
                 margin-right: 1em;
                "
               >
@@ -149,9 +159,9 @@
 </nav>
 
 <!-- Toolbar secondary -->
-<div class="toolbar" role="banner">
+<!--<div class="toolbar" role="banner">
 
-  <!-- logo -->
+  &lt;!&ndash; logo &ndash;&gt;
   <a href="#">
     <img
       alt="Me Logo"
@@ -162,10 +172,10 @@
     >
   </a>
 
-  <!--  left-->
+  &lt;!&ndash;  left&ndash;&gt;
   <div class="sticky">
     <ul id="menu">
-      <!--      <li><a href="#">Home</a></li>-->
+      &lt;!&ndash;      <li><a href="#">Home</a></li>&ndash;&gt;
       <li><a href="#">Work</a>
         <ul>
           <li><a href="#">CSS Development</a></li>
@@ -176,21 +186,21 @@
       </li>
       <li><a href="#">Studies</a></li>
       <li><a href="#">About</a></li>
-      <li><a href="#"></a></li> <!-- doesn't work without this line -->
-      <!--      <li style="float: right;"><a href="#">Feedback</a></li>-->
+      <li><a href="#"></a></li> &lt;!&ndash; doesn't work without this line &ndash;&gt;
+      &lt;!&ndash;      <li style="float: right;"><a href="#">Feedback</a></li>&ndash;&gt;
     </ul>
   </div>
 
-  <!-- spacer -->
+  &lt;!&ndash; spacer &ndash;&gt;
   <div class="spacer"></div>
 
-  <!--  right-->
-  <!-- contact -->
+  &lt;!&ndash;  right&ndash;&gt;
+  &lt;!&ndash; contact &ndash;&gt;
   <ul class="menu">
     <li style="float: right;"><a href="#">Contact</a></li>
   </ul>
 
-  <!-- twitter-YouTube logos -->
+  &lt;!&ndash; twitter-YouTube logos &ndash;&gt;
   <a aria-label="Angular on twitter" href="https://twitter.com/angular"
      rel="noopener" target="_blank" title="Twitter">
     <svg data-name="Logo" height="24" id="twitter-logo" viewBox="0 0 400 400"
@@ -211,4 +221,4 @@
     </svg>
   </a>
 
-</div>
+</div>-->
