@@ -13,12 +13,12 @@ const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
   {path: 'education', component: EducationComponent},
+  {path: 'experience', component: ExperienceComponent},
   {path: 'project', component: ProjectComponent},
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactComponent},
-  {path: 'update/:id', component: UpdateComponentComponent},
-  {path: 'experience', component: ExperienceComponent},
-  {path: 'skill', component: SkillComponent}
+  {path: 'skill', component: SkillComponent},
+  {path: 'update/:id', component: UpdateComponentComponent}
 ];
 
 @NgModule({

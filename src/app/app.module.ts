@@ -5,10 +5,10 @@ import {AppRoutingModule} from './app-routing.module';
 // Components
 import {AppComponent} from './components/app/app.component';
 import {HomeComponent} from './components/home/home.component';
-import {AboutComponent} from './components/about/about.component';
-import {ExperienceComponent} from './components/experience/experience.component';
 import {EducationComponent} from './components/education/education.component';
+import {ExperienceComponent} from './components/experience/experience.component';
 import {ProjectComponent} from './components/project/project.component';
+import {AboutComponent} from './components/about/about.component';
 import {ContactComponent} from './components/contact/contact.component';
 import {HeaderComponent} from './components/header/header.component';
 import {FooterComponent} from './components/footer/footer.component';
@@ -30,16 +30,16 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 import {MatBadgeModule} from "@angular/material/badge";
 import {MatBottomSheetModule} from "@angular/material/bottom-sheet";
-import { SkillComponent } from './components/skill/skill.component';
+import {SkillComponent} from './components/skill/skill.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent,
-    ExperienceComponent,
     EducationComponent,
+    ExperienceComponent,
     ProjectComponent,
+    AboutComponent,
     ContactComponent,
     HeaderComponent,
     FooterComponent,
