@@ -1,17 +1,13 @@
-/*.belowCarousel {
-  padding-top: 70px;
-}
-*/
 .row {
   padding: 1rem;
 }
 
 div {
-  background: lightgoldenrodyellow;
+  /*background: #EEEEEE;*/
 }
 
 div, #project {
-  background: lightcoral;
+  /*background: lightgoldenrodyellow;*/
 }
 
 h2, h3 {
