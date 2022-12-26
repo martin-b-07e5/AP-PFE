@@ -10,6 +10,7 @@ import {PersonService} from "../../service/person.service";
 export class AboutComponent implements OnInit {
   person: Person = new Person("", "", "");
 
+  // constructor call the service.
   constructor(public personService: PersonService) {
     this.personService.findById().subscribe(data => {
       this.person = data
