@@ -13,8 +13,8 @@ export class PersonService {
   }
 
   public findAll(): Observable<Person> {
-    // tiene que estar corriendo spring » sino no muestra
-    return this.http.get<Person>(this.URL + "findById/1");
+    // tiene que estar corriendo spring, caso contrario no muestra.
+    return this.http.get<Person>(this.URL + "findById/2");
   }
 
 }

@@ -1,13 +1,40 @@
 export class Person {
   // private personId?: Number;
-  firstName: String;
-  lastName: String;
-  email: String
+  // private personId!: Number;
+  private readonly _firstName: String;
+  private readonly _lastName: String;
+  private readonly _email: String
 
   // constructor
   constructor(firstName: String, lastName: String, email: String) {
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.email = email;
+    this._firstName = firstName;
+    this._lastName = lastName;
+    this._email = email;
   }
+
+  // getters-setters
+  get firstName(): String {
+    return this._firstName;
+  }
+
+  // set firstName(value: String) {
+  //   this._firstName = value;
+  // }
+
+  get lastName(): String {
+    return this._lastName;
+  }
+
+  // set lastName(value: String) {
+  //   this._lastName = value;
+  // }
+
+  get email(): String {
+    return this._email;
+  }
+
+  // set email(value: String) {
+  //   this._email = value;
+  // }
+
 }
