@@ -12,6 +12,7 @@ export class AboutComponent implements OnInit {
 
   // constructor call the service.
   constructor(public personService: PersonService) {
+    // what is in person is saved in data
     this.personService.findById().subscribe(data => {
       this.person = data
     })
@@ -22,6 +23,5 @@ export class AboutComponent implements OnInit {
       this.person = data
     })*/
   }
-
 
 }
