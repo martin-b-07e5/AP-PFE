@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
-import {Employee} from "../../models/employee.model";
-import {EmployeeService} from "../../services/employee.service";
+import {Employee} from "../../model/employee.model";
+import {EmployeeService} from "../../service/employee.service";
 
 @Component({
   selector: 'app-home',

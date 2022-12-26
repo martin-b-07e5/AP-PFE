@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {Employee} from "../models/employee.model";
+import {Employee} from "../model/employee.model";
 import {EmployeeServiceService} from "./employee-service.service";
 
 /* acá iría implementado el código de consulta a la DB */
