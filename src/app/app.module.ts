@@ -33,6 +33,7 @@ import {MatBadgeModule} from "@angular/material/badge";
 import {MatBottomSheetModule} from "@angular/material/bottom-sheet";
 import {SkillComponent} from './components/skill/skill.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     EmployeeCharacteristicsComponent,
     UpdateComponentComponent,
     SkillComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    LoginComponent
   ],
   imports: [
     AppRoutingModule,
