@@ -32,6 +32,7 @@ import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 import {MatBadgeModule} from "@angular/material/badge";
 import {MatBottomSheetModule} from "@angular/material/bottom-sheet";
 import {SkillComponent} from './components/skill/skill.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import {SkillComponent} from './components/skill/skill.component';
     EmployeeChildComponent,
     EmployeeCharacteristicsComponent,
     UpdateComponentComponent,
-    SkillComponent
+    SkillComponent,
+    NotFoundComponent
   ],
   imports: [
     AppRoutingModule,
