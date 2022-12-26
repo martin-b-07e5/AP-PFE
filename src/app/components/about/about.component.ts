@@ -11,7 +11,7 @@ export class AboutComponent implements OnInit {
   person: Person = new Person("", "", "");
 
   constructor(public personService: PersonService) {
-    this.personService.findAll().subscribe(data => {
+    this.personService.findById().subscribe(data => {
       this.person = data
     })
   }

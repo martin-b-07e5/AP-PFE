@@ -12,7 +12,7 @@ export class PersonService {
   constructor(private http: HttpClient) {
   }
 
-  public findAll(): Observable<Person> {
+  public findById(): Observable<Person> {
     // tiene que estar corriendo spring, caso contrario no muestra.
     return this.http.get<Person>(this.URL + "findById/2");
   }
