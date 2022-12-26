@@ -18,6 +18,7 @@ import {
   EmployeeCharacteristicsComponent
 } from "./components/employee-characteristics/employee-characteristics.component";
 import {UpdateComponentComponent} from './components/update-component/update-component.component';
+import {HttpClientModule} from "@angular/common/http";
 
 // Material
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -62,7 +63,8 @@ import {SkillComponent} from './components/skill/skill.component';
     MatButtonModule,
     MatSlideToggleModule,
     MatBadgeModule,
-    MatBottomSheetModule
+    MatBottomSheetModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
