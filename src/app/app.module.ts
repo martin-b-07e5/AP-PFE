@@ -2,6 +2,8 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {FormsModule} from "@angular/forms";
 import {AppRoutingModule} from './app-routing.module';
+import {HttpClientModule} from "@angular/common/http";
+//
 // Components
 import {AppComponent} from './components/app/app.component';
 import {HomeComponent} from './components/home/home.component';
@@ -18,7 +20,7 @@ import {
   EmployeeCharacteristicsComponent
 } from "./components/employee-characteristics/employee-characteristics.component";
 import {UpdateComponentComponent} from './components/update-component/update-component.component';
-import {HttpClientModule} from "@angular/common/http";
+
 
 // Material
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
