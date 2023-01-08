@@ -2,35 +2,35 @@
   <div id="experiencia" class="row">
     <h1>Experiencia laboral</h1>
 
-    <div class="col-lg-11" style="margin-left: 1rem;">
-      <!-- trabajo1 -->
-      <ul>
-        <li>
-          <h2>Trabajo 1 </h2> - <h3>({{years1}} years)</h3>
-        </li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto culpa deserunt doloremque
-          dolorum in ipsam ipsum maiores maxime, molestias nostrum porro quod rerum sit totam, unde ut velit vero!</p>
-      </ul>
-
-      <!-- trabajo2 -->
-      <ul>
-        <li>
-          <h2>Trabajo 2 </h2> - <h3>({{years2}} years)</h3>
-        </li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto culpa deserunt doloremque
-          dolorum in ipsam ipsum maiores maxime, molestias nostrum porro quod rerum sit totam, unde ut velit vero!</p>
-      </ul>
-
-      <!-- trabajo3 -->
-      <ul>
-        <li>
-          <h2>Trabajo 3 </h2> - <h3>({{years3}} years)</h3>
-        </li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto culpa deserunt doloremque
-          dolorum in ipsam ipsum maiores maxime, molestias nostrum porro quod rerum sit totam, unde ut velit vero!</p>
-      </ul>
-
+    <div class="col-lg-2">
+      <button type="button" class="btn btn-primary"
+              routerLink="/experienceadd"
+      >Add Experience1
+      </button>
     </div>
+    <div class="col-lg-12" style="margin-left: 1rem;">
+      <table class="table">
+        <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Description</th>
+          <th scope="col">Edit</th>
+          <th scope="col">Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let Experience of experiences">
+          <td>{{Experience.idExperience}}</td>
+          <td>{{Experience.name}}</td>
+          <td>{{Experience.description}}</td>
+          <td>EDITAR</td>
+          <td>BORRAR</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
 
   </div>
 </div>

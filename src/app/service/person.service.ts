@@ -14,7 +14,7 @@ export class PersonService {
 
   public findById(): Observable<Person> {
     // tiene que estar corriendo spring, caso contrario no muestra.
-    return this.http.get<Person>(this.URL + "findById/2");
+    return this.http.get<Person>(this.URL + "findById/1");
   }
 
 }

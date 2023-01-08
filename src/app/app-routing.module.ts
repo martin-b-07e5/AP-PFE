@@ -9,6 +9,7 @@ import {UpdateComponentComponent} from "./components/update-component/update-com
 import {ExperienceComponent} from "./components/experience/experience.component";
 import {SkillComponent} from "./components/skill/skill.component";
 import {NotFoundComponent} from "./components/not-found/not-found.component";
+import {ExperienceAddComponent} from "./components/experience/experience-add.component";
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent},
   {path: 'skill', component: SkillComponent},
   {path: 'update/:id', component: UpdateComponentComponent},
+  {path: 'experienceadd', component: ExperienceAddComponent},
   {path: '**', component: NotFoundComponent}  // below other routes
 ];
 

@@ -1,40 +1,49 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ExperienceService} from "../../service/experience.service";
+import {Experience} from "../../model/experience.model";
+
+// import { TokenService } from 'src/app/service/token.service';
 
 @Component({
   selector: 'app-experience',
   templateUrl: './experience.component.html',
   styleUrls: ['./experience.component.css']
 })
-export class ExperienceComponent {
-  private _years1: number = 3;
-  private _years2: number = 5;
-  private _years3: number = 3;
+export class ExperienceComponent implements OnInit {
 
-  constructor() {
+  experiences: Experience[] = [];
+
+  // constructor(private experienceService: ExperienceService, private tokenService: TokenService) {
+  constructor(private experienceService: ExperienceService) {
   }
 
-  get years1(): number {
-    return this._years1;
+  // isLogged = false;
+
+  ngOnInit(): void {
+    this.findAllExperience();
+    // if (this.tokenService.getToken()) {
+    //   this.isLogged = true;
+    // } else {
+    //   this.isLogged = false;
+    // }
   }
 
-  set years1(value: number) {
-    this._years1 = value;
+  findAllExperience(): void {
+    this.experienceService.findAll().subscribe(data => {
+      this.experiences = data;
+    })
   }
 
-  get years2(): number {
-    return this._years2;
-  }
-
-  set years2(value: number) {
-    this._years2 = value;
-  }
-
-  get years3(): number {
-    return this._years3;
-  }
-
-  set years3(value: number) {
-    this._years3 = value;
+  delete(idExperience?: number) {
+    if (idExperience != undefined) {
+      this.experienceService.delete(idExperience).subscribe(
+        data => {
+          this.findAllExperience();
+        }, err => {
+          alert("No se pudo borrar la experiencia");
+        }
+      )
+    }
   }
 
 
