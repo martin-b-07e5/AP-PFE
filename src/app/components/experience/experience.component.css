@@ -1,13 +1,13 @@
 .row {
-  padding: 1rem;
+  padding: 0.1rem;
 }
 
-div {
-  background: #EEEEEE;
-}
+/*div {*/
+/*  background: #EEEEEE;*/
+/*}*/
 
 div, #experiencia {
-  background: lightcyan;
+  background: ghostwhite;
 }
 
 h2, h3 {
