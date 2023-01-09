@@ -9,7 +9,7 @@ import {UpdateComponentComponent} from "./components/update-component/update-com
 import {ExperienceComponent} from "./components/experience/experience.component";
 import {SkillComponent} from "./components/skill/skill.component";
 import {NotFoundComponent} from "./components/not-found/not-found.component";
-import {ExperienceAddComponent} from "./components/experience/experience-add.component";
+import {ExperienceAddComponent} from "./components/experience/create/experience-add.component";
 
 const routes: Routes = [
   {path: '', component: HomeComponent},

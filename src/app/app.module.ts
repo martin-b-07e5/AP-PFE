@@ -36,7 +36,7 @@ import {MatBottomSheetModule} from "@angular/material/bottom-sheet";
 import {SkillComponent} from './components/skill/skill.component';
 import {NotFoundComponent} from './components/not-found/not-found.component';
 import {LoginComponent} from './components/login/login.component';
-import {ExperienceAddComponent} from './components/experience/experience-add.component';
+import {ExperienceAddComponent} from './components/experience/create/experience-add.component';
 
 @NgModule({
   declarations: [

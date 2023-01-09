@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
-import {Experience} from "../../model/experience.model";
-import {ExperienceService} from "../../service/experience.service";
+import {Experience} from "../../../model/experience.model";
+import {ExperienceService} from "../../../service/experience.service";
 
 @Component({
   selector: 'app-experience-add',
