@@ -5,7 +5,7 @@
     <div class="col-lg-12">
 
       <button type="button" class="btn btn-primary"
-              routerLink="/experienceadd"
+              routerLink="/experience-add"
       >Add Experience
       </button>
 
@@ -24,8 +24,18 @@
           <td>{{Experience.idExperience}}</td>
           <td>{{Experience.name}}</td>
           <td>{{Experience.description}}</td>
-          <td>EDITAR</td>
-          <td>BORRAR</td>
+          <td>
+            <button class="btn btn-sm btn-warning"
+                    routerLink="/experienceupdate/{{Experience.idExperience}}">
+              <i class="bi bi-pencil-fill"></i> Edit
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-sm btn-danger">
+              <i class="bi bi-trash2"></i>
+              Delete
+            </button>
+          </td>
         </tr>
         </tbody>
       </table>

@@ -3,7 +3,6 @@ import {BrowserModule} from '@angular/platform-browser';
 import {FormsModule} from "@angular/forms";
 import {AppRoutingModule} from './app-routing.module';
 import {HttpClientModule} from "@angular/common/http";
-//
 // Components
 import {AppComponent} from './components/app/app.component';
 import {HomeComponent} from './components/home/home.component';
@@ -15,12 +14,14 @@ import {ContactComponent} from './components/contact/contact.component';
 import {HeaderComponent} from './components/header/header.component';
 import {FooterComponent} from './components/footer/footer.component';
 import {BannerComponent} from "./components/banner/banner.component";
-import {EmployeeChildComponent} from "./components/employee-child/employee-child.component";
-import {
-  EmployeeCharacteristicsComponent
-} from "./components/employee-characteristics/employee-characteristics.component";
-import {UpdateComponentComponent} from './components/update-component/update-component.component';
 
+import {SkillComponent} from './components/skill/skill.component';
+import {NotFoundComponent} from './components/not-found/not-found.component';
+import {LoginComponent} from './components/login/login.component';
+
+import {ExperienceAddComponent} from './components/experience/create/experience-add.component';
+import {ExperienceUpdateComponent} from './components/experience/update/experience-update.component';
+//
 
 // Material
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -33,10 +34,8 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 import {MatBadgeModule} from "@angular/material/badge";
 import {MatBottomSheetModule} from "@angular/material/bottom-sheet";
-import {SkillComponent} from './components/skill/skill.component';
-import {NotFoundComponent} from './components/not-found/not-found.component';
-import {LoginComponent} from './components/login/login.component';
-import {ExperienceAddComponent} from './components/experience/create/experience-add.component';
+
+//
 
 @NgModule({
   declarations: [
@@ -50,13 +49,11 @@ import {ExperienceAddComponent} from './components/experience/create/experience-
     HeaderComponent,
     FooterComponent,
     BannerComponent,
-    EmployeeChildComponent,
-    EmployeeCharacteristicsComponent,
-    UpdateComponentComponent,
     SkillComponent,
     NotFoundComponent,
     LoginComponent,
-    ExperienceAddComponent
+    ExperienceAddComponent,
+    ExperienceUpdateComponent
   ],
   imports: [
     AppRoutingModule,

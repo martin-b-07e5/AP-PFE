@@ -35,9 +35,9 @@ export class ExperienceService {
   }
 
   // UPDATE pending ------------------------
-  /*public update(id: number, experiencia: Experiencia): Observable<any>{
-    return this.httpClient.put<any>(this.URL + `update/${id}`, experiencia);
-  }*/
+  public update(id: number, experience: Experience): Observable<any> {
+    return this.httpClient.put<any>(this.URL + `update/${id}`, experience);
+  }
 
   // DELETE pending ------------------------
   public delete(id: number): Observable<any> {

@@ -1,4 +1,5 @@
 export class Experience {
+  // same names as used in java.
   idExperience?: number;
   name: string;
   description: string;
