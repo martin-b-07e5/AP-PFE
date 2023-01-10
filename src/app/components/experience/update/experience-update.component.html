@@ -1,4 +1,4 @@
-<div class="container" *ngIf="experience1">
+<div class="container" *ngIf="experience">
   <div class="row">
 
     <div>
@@ -8,14 +8,14 @@
           <label for="name">Experience Name</label>
           <input type="text" class="form-control"
                  id="name" name="name"
-                 [(ngModel)]="experience1.name" required>
+                 [(ngModel)]="experience.name" required>
         </div>
 
         <div class="form-group">
           <label for="description">Experience Description</label>
           <input type="text" class="form-control"
                  id="description" name="description"
-                 [(ngModel)]="experience1.description" required>
+                 [(ngModel)]="experience.description" required>
         </div>
 
         <button class="btn btn-primary">Update experience</button>

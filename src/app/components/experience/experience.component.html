@@ -1,6 +1,6 @@
 <div class="container">
-  <div id="experiencia" class="row">
-    <h1>Experiencia laboral</h1>
+  <div id="experience" class="row">
+    <h1>Laboral Experience</h1>
 
     <div class="col-lg-12">
 
@@ -21,13 +21,14 @@
         </thead>
         <tbody>
         <tr *ngFor="let Experience of experiences">
-          <td>{{Experience.idExperience}}</td>
+          <td>{{Experience.id}}</td>
           <td>{{Experience.name}}</td>
           <td>{{Experience.description}}</td>
           <td>
             <button class="btn btn-sm btn-warning"
-                    routerLink="/experienceupdate/{{Experience.idExperience}}">
-              <i class="bi bi-pencil-fill"></i> Edit
+                    routerLink="/experienceupdate/{{Experience.id}}">
+              <i class="bi bi-pencil-fill"></i>
+              Edit
             </button>
           </td>
           <td>

@@ -19,16 +19,16 @@ export class ExperienceAddComponent implements OnInit {
   }
 
   onCreate(): void {
-    const EXPERIENCE = new Experience(this.name, this.description);
+    const experience = new Experience(this.name, this.description);
 
     // add WITH some validation
-    this.experienceService.add(EXPERIENCE).subscribe(
+    this.experienceService.add(experience).subscribe(
       next => {
-        alert("Experience added");
-        this.router.navigate(['']).then(r => r);
+        // alert("Experience added");
+        this.router.navigate(['']);
       }, error => {
         alert("add Experience Failed");
-        this.router.navigate(['']).then(r => r);
+        this.router.navigate(['']);
       }
     );
 

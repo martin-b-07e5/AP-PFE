@@ -1,6 +1,6 @@
 import {HttpClient} from "@angular/common/http";
-import {Observable} from "rxjs";
 import {Injectable} from "@angular/core";
+import {Observable} from "rxjs";
 import {Experience} from "../model/experience.model";
 
 @Injectable({
@@ -22,7 +22,11 @@ export class ExperienceService {
   }
 
   public getById(id: number): Observable<Experience> {
-    return this.httpClient.get<Experience>(this.URL + "getById/`${idExperience}`")
+    return this.httpClient.get<Experience>(this.URL + "getById/${id}")
+  }
+
+  public detail(id: number): Observable<Experience> {
+    return this.httpClient.get<Experience>(this.URL + `detail/${id}`);
   }
 
   // CREATE ------------------------

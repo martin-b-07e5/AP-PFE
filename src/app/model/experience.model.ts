@@ -1,6 +1,6 @@
 export class Experience {
   // same names as used in java.
-  idExperience?: number;
+  id?: number;
   name: string;
   description: string;
 
@@ -8,5 +8,6 @@ export class Experience {
     this.name = name;
     this.description = description;
   }
+
 
 }

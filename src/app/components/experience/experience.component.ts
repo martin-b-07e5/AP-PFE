@@ -35,9 +35,9 @@ export class ExperienceComponent implements OnInit {
   }
 
   // delete experience
-  delete(idExperience?: number) {
-    if (idExperience != undefined) {
-      this.experienceService.delete(idExperience).subscribe(
+  delete(id?: number) {
+    if (id != undefined) {
+      this.experienceService.delete(id).subscribe(
         next => {
           this.findAllExperience();
         }, error => {
