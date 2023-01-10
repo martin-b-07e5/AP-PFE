@@ -15,12 +15,12 @@ export class ExperienceComponent implements OnInit {
 
   // constructor(private experienceService: ExperienceService, private tokenService: TokenService) {
   constructor(private experienceService: ExperienceService) {
+    this.findAllExperience();
   }
 
   // isLogged = false;
 
   ngOnInit(): void {
-    this.findAllExperience();
     // if (this.tokenService.getToken()) {
     //   this.isLogged = true;
     // } else {

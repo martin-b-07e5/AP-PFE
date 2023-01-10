@@ -10,7 +10,7 @@ import {ExperienceService} from "../../../service/experience.service";
 })
 export class ExperienceUpdateComponent implements OnInit {
 
-  // @ts-ignore
+  // // @ts-ignore
   experience: Experience = null;
 
   constructor(private experienceService: ExperienceService,
@@ -38,7 +38,7 @@ export class ExperienceUpdateComponent implements OnInit {
         this.router.navigate(['']);
       }, error => {
         alert("Error updating experience");
-        this.router.navigate(['']).then(r => r);
+        this.router.navigate(['']);
       }
     )
   }
