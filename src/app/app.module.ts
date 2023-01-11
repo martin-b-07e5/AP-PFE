@@ -32,7 +32,7 @@ import {SocialComponent} from './components/social/social.component';
 
 import {LoginComponent} from './components/login/login.component';
 
-import {ExperienceAddComponent} from './components/experience/create/experience-add.component';
+import {ExperienceCreateComponent} from './components/experience/create/experience-create.component';
 import {ExperienceUpdateComponent} from './components/experience/update/experience-update.component';
 import {EducationCreateComponent} from './components/education/create/education-create.component';
 import {EducationUpdateComponent} from './components/education/update/education-update.component';
@@ -55,7 +55,7 @@ import {EducationUpdateComponent} from './components/education/update/education-
     NotFoundComponent,
     SocialComponent,
     LoginComponent,
-    ExperienceAddComponent,
+    ExperienceCreateComponent,
     ExperienceUpdateComponent,
     EducationCreateComponent,
     EducationUpdateComponent

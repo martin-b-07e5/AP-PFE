@@ -4,11 +4,11 @@ import {Education} from "../../../model/experience.model";
 import {EducationService} from "../../../service/experience.service";
 
 @Component({
-  selector: 'app-experience-add',
-  templateUrl: './experience-add.component.html',
-  styleUrls: ['./experience-add.component.css']
+  selector: 'app-experience-create',
+  templateUrl: './experience-create.component.html',
+  styleUrls: ['./experience-create.component.css']
 })
-export class ExperienceAddComponent implements OnInit {
+export class ExperienceCreateComponent implements OnInit {
   name: string = '';
   description: string = '';
 
