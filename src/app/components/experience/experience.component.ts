@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {ExperienceService} from "../../service/experience.service";
-import {Experience} from "../../model/experience.model";
-// import { TokenService } from 'src/app/service/token.service';
+import {Education} from "../../model/experience.model";
+import {EducationService} from "../../service/experience.service";
 import {UiService} from "../../service/ui.service";
 
 @Component({
@@ -11,16 +10,14 @@ import {UiService} from "../../service/ui.service";
 })
 export class ExperienceComponent implements OnInit {
 
-  experiences: Experience[] = [];
+  experiences: Education[] = [];
 
-  // constructor(private experienceService: ExperienceService, private tokenService: TokenService) {
-  constructor(private experienceService: ExperienceService, private uiService: UiService) {
+  constructor(private experienceService: EducationService, private uiService: UiService) {
     this.findAllExperience();
-    uiService.toggleAddTask();
+    uiService.toggleAddTask();  // working on this service
   }
 
-  isLogged: boolean = false;
-
+  isLogged: boolean = false;  // working
 
   ngOnInit(): void {
     // if (this.tokenService.getToken()) {
@@ -39,16 +36,15 @@ export class ExperienceComponent implements OnInit {
 
   // delete experience
   delete(id?: number) {
-    if (id != undefined) {
-      this.experienceService.delete(id).subscribe(
-        next => {
-          this.findAllExperience();
-        }, error => {
-          alert("No se pudo borrar la experiencia");
-        }
-      )
-    }
+    this.experienceService.delete(id).subscribe(
+      next => {
+        alert(id + "no entra acá!!");
+        this.findAllExperience();
+      },
+      error => {
+        console.log("experience " + id + ": deleted");
+        this.findAllExperience();
+      })
   }
-
 
 }

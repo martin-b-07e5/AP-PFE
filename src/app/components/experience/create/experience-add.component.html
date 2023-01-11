@@ -9,6 +9,8 @@
           <input type="text" class="form-control"
                  id="name" name="name"
                  [(ngModel)]="name" required
+                 [autofocus]
+                 autofocus
           >
         </div>
 
@@ -16,11 +18,12 @@
           <label for="description">Experience Description</label>
           <input type="text" class="form-control"
                  id="description" name="description"
+                 autofocus
                  [(ngModel)]="description" required
           >
         </div>
 
-        <button class="btn btn-primary">Add experience</button>
+        <button class="btn btn-primary" style="margin-top: 0.8rem">Add</button>
 
       </form>
     </div>

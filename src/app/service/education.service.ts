@@ -1,13 +1,13 @@
+import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {Injectable} from "@angular/core";
 import {Observable} from "rxjs";
-import {Education} from "../model/experience.model";
+import {Education} from "../model/education.model";
 
 @Injectable({
   providedIn: 'root'
 })
 export class EducationService {
-  URL = "http://localhost:8082/api/v1/experience/";
+  URL = "http://localhost:8082/api/v1/education/";
 
   constructor(private httpClient: HttpClient) {
   }
@@ -30,13 +30,13 @@ export class EducationService {
   }
 
   // CREATE ------------------------
-  public add(experience: Education): Observable<any> {
-    return this.httpClient.post<any>(this.URL + 'add', experience)
+  public add(education: Education): Observable<any> {
+    return this.httpClient.post<any>(this.URL + 'add', education)
   }
 
   // UPDATE pending ------------------------
-  public update(id: number, experience: Education): Observable<any> {
-    return this.httpClient.put<any>(this.URL + `update/${id}`, experience);
+  public update(id: number, education: Education): Observable<any> {
+    return this.httpClient.put<any>(this.URL + `update/${id}`, education);
   }
 
   // DELETE pending ------------------------

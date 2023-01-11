@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
-import {Experience} from "../../../model/experience.model";
-import {ExperienceService} from "../../../service/experience.service";
+import {Education} from "../../../model/experience.model";
+import {EducationService} from "../../../service/experience.service";
 
 @Component({
   selector: 'app-experience-update',
@@ -11,9 +11,9 @@ import {ExperienceService} from "../../../service/experience.service";
 export class ExperienceUpdateComponent implements OnInit {
 
   // // @ts-ignore
-  experience: Experience = null;
+  experience: Education = null;
 
-  constructor(private experienceService: ExperienceService,
+  constructor(private experienceService: EducationService,
               private activatedRoute: ActivatedRoute,
               private router: Router) {
   }
@@ -24,9 +24,9 @@ export class ExperienceUpdateComponent implements OnInit {
     this.experienceService.detail(id).subscribe(
       next => {
         this.experience = next;
-      }, error => {
-        alert("Error updating experience");
-        this.router.navigate(['']);
+      },
+      error => {
+        alert("update Experience Failed");
       }
     )
   }
@@ -35,10 +35,9 @@ export class ExperienceUpdateComponent implements OnInit {
     const id = this.activatedRoute.snapshot.params['id'];
     this.experienceService.update(id, this.experience).subscribe(
       next => {
-        this.router.navigate(['']);
+        this.router.navigate(['']).then(r => r);
       }, error => {
         alert("Error updating experience");
-        this.router.navigate(['']);
       }
     )
   }
