@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
-import {Education} from "../../../model/experience.model";
-import {EducationService} from "../../../service/experience.service";
+import {Experience} from "../../../model/experience.model";
+import {ExperienceService} from "../../../service/experience.service";
 
 @Component({
   selector: 'app-experience-create',
@@ -12,14 +12,14 @@ export class ExperienceCreateComponent implements OnInit {
   name: string = '';
   description: string = '';
 
-  constructor(private experienceService: EducationService, private router: Router) {
+  constructor(private experienceService: ExperienceService, private router: Router) {
   }
 
   ngOnInit(): void {
   }
 
   onCreate(): void {
-    const experience = new Education(this.name, this.description);
+    const experience = new Experience(this.name, this.description);
 
     // add WITH some validation
     this.experienceService.add(experience).subscribe(

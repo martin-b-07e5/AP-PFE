@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {Education} from "../../model/experience.model";
-import {EducationService} from "../../service/experience.service";
+import {Experience} from "../../model/experience.model";
+import {ExperienceService} from "../../service/experience.service";
 import {UiService} from "../../service/ui.service";
 
 @Component({
@@ -10,10 +10,10 @@ import {UiService} from "../../service/ui.service";
 })
 export class ExperienceComponent implements OnInit {
 
-  experiences: Education[] = [];
+  experiences: Experience[] = [];
 
-  constructor(private experienceService: EducationService, private uiService: UiService) {
-    this.findAllExperience();
+  constructor(private experienceService: ExperienceService, private uiService: UiService) {
+    this.findAll();
     uiService.toggleAddTask();  // working on this service
   }
 
@@ -27,23 +27,22 @@ export class ExperienceComponent implements OnInit {
     // }
   }
 
-  findAllExperience(): void {
+  findAll(): void {
     this.experienceService.findAll().subscribe(
       next => {
         this.experiences = next;
       });
   }
 
-  // delete experience
   delete(id?: number) {
     this.experienceService.delete(id).subscribe(
       next => {
         alert(id + "no entra acá!!");
-        this.findAllExperience();
+        this.findAll();
       },
       error => {
-        console.log("experience " + id + ": deleted");
-        this.findAllExperience();
+        console.log(id + ": deleted");
+        this.findAll();
       })
   }
 

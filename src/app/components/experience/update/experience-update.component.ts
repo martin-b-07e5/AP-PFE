@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
-import {Education} from "../../../model/experience.model";
-import {EducationService} from "../../../service/experience.service";
+import {Experience} from "../../../model/experience.model";
+import {ExperienceService} from "../../../service/experience.service";
 
 @Component({
   selector: 'app-experience-update',
@@ -11,9 +11,9 @@ import {EducationService} from "../../../service/experience.service";
 export class ExperienceUpdateComponent implements OnInit {
 
   // // @ts-ignore
-  experience: Education = null;
+  experience: Experience = null;
 
-  constructor(private experienceService: EducationService,
+  constructor(private experienceService: ExperienceService,
               private activatedRoute: ActivatedRoute,
               private router: Router) {
   }
