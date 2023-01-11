@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {ExperienceService} from "../../service/experience.service";
 import {Experience} from "../../model/experience.model";
-
 // import { TokenService } from 'src/app/service/token.service';
+import {UiService} from "../../service/ui.service";
 
 @Component({
   selector: 'app-experience',
@@ -14,11 +14,13 @@ export class ExperienceComponent implements OnInit {
   experiences: Experience[] = [];
 
   // constructor(private experienceService: ExperienceService, private tokenService: TokenService) {
-  constructor(private experienceService: ExperienceService) {
+  constructor(private experienceService: ExperienceService, private uiService: UiService) {
     this.findAllExperience();
+    uiService.toggleAddTask();
   }
 
-  // isLogged = false;
+  isLogged: boolean = false;
+
 
   ngOnInit(): void {
     // if (this.tokenService.getToken()) {
@@ -29,9 +31,10 @@ export class ExperienceComponent implements OnInit {
   }
 
   findAllExperience(): void {
-    this.experienceService.findAll().subscribe(data => {
-      this.experiences = data;
-    })
+    this.experienceService.findAll().subscribe(
+      next => {
+        this.experiences = next;
+      });
   }
 
   // delete experience

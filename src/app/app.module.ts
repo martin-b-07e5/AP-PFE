@@ -34,6 +34,7 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 import {MatBadgeModule} from "@angular/material/badge";
 import {MatBottomSheetModule} from "@angular/material/bottom-sheet";
+import { SocialComponent } from './components/social/social.component';
 
 //
 
@@ -53,7 +54,8 @@ import {MatBottomSheetModule} from "@angular/material/bottom-sheet";
     NotFoundComponent,
     LoginComponent,
     ExperienceAddComponent,
-    ExperienceUpdateComponent
+    ExperienceUpdateComponent,
+    SocialComponent
   ],
   imports: [
     AppRoutingModule,

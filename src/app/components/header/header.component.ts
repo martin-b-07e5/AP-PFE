@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+
+  @Output() btnClick = new EventEmitter();
+
+  constructor() {
+  }
+
+  isLogged = false;
+
+  onClick() {
+    console.log("onclick() emit not working")
+    this.btnClick.emit();
+  }
+
 
 }
