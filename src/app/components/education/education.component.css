@@ -2,8 +2,12 @@
   padding: 0.1rem;
 }
 
-div {
-  background: #EEEEEE;
+/*div {*/
+/*  background: #EEEEEE;*/
+/*}*/
+
+div, #education {
+  background: ghostwhite;
 }
 
 h2, h3 {
