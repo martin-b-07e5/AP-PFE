@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Education} from "../../../model/education.model";
 import {EducationService} from "../../../service/education.service";
 import {UiService} from "../../../service/ui.service";
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-education-update',
@@ -10,40 +11,37 @@ import {UiService} from "../../../service/ui.service";
 })
 export class EducationUpdateComponent implements OnInit {
 
-  educations: Education[] = [];
+  // // @ts-ignore
+  education: Education = null;
 
-  constructor(private educationService: EducationService, private uiService: UiService) {
-    this.findAll();
-    uiService.toggleAddTask();  // working on this service
+  constructor(private educationService: EducationService,
+              private activatedRoute: ActivatedRoute,
+              private router: Router) {
   }
 
-  isLogged: boolean = false;  // working
-
+  // captures the id
   ngOnInit(): void {
-    // if (this.tokenService.getToken()) {
-    //   this.isLogged = true;
-    // } else {
-    //   this.isLogged = false;
-    // }
-  }
-
-  findAll(): void {
-    this.educationService.findAll().subscribe(
+    const id = this.activatedRoute.snapshot.params['id'];
+    this.educationService.detail(id).subscribe(
       next => {
-        this.educations = next;
-      });
-  }
-
-  delete(id?: number) {
-    this.educationService.delete(id).subscribe(
-      next => {
-        alert(id + "no entra acá!!");
-        this.findAll();
+        this.education = next;
       },
       error => {
-        console.log(id + ": deleted");
-        this.findAll();
-      })
+        alert("update Failed");
+      }
+    )
   }
+
+  onUpdate(): void {
+    const id = this.activatedRoute.snapshot.params['id'];
+    this.educationService.update(id, this.education).subscribe(
+      next => {
+        this.router.navigate(['']).then(r => r);
+      }, error => {
+        alert("Update error.");
+      }
+    )
+  }
+
 
 }

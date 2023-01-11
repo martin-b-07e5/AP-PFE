@@ -26,7 +26,7 @@ export class ExperienceUpdateComponent implements OnInit {
         this.experience = next;
       },
       error => {
-        alert("update Experience Failed");
+        alert("update Failed");
       }
     )
   }
@@ -37,7 +37,7 @@ export class ExperienceUpdateComponent implements OnInit {
       next => {
         this.router.navigate(['']).then(r => r);
       }, error => {
-        alert("Error updating experience");
+        alert("Update error.");
       }
     )
   }

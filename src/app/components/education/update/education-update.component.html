@@ -1,1 +1,29 @@
-<p>education-update works!</p>
+<div class="container" *ngIf="education">
+  <div class="row">
+
+    <div>
+      <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+
+        <div class="form-group">
+          <label for="name">Education Name</label>
+          <input type="text" class="form-control"
+                 id="name" name="name"
+                 [(ngModel)]="education.name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Education Description</label>
+          <input type="text" class="form-control"
+                 id="description" name="description"
+                 [(ngModel)]="education.description" required>
+        </div>
+
+        <button class="btn btn-primary" style="margin-top: 0.8rem">
+          Update
+        </button>
+
+      </form>
+    </div>
+
+  </div>
+</div>
