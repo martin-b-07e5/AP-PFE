@@ -7,7 +7,7 @@ import {Education} from "../model/education.model";
   providedIn: 'root'
 })
 export class EducationService {
-  URL = "http://localhost:8082/api/v1/education/";
+  URL = "http://localhost:8080/api/v1/education/";
 
   constructor(private httpClient: HttpClient) {
   }

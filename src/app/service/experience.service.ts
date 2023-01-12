@@ -7,7 +7,7 @@ import {Experience} from "../model/experience.model";
   providedIn: 'root'
 })
 export class ExperienceService {
-  URL = "http://localhost:8082/api/v1/experience/";
+  URL = "http://localhost:8080/api/v1/experience/";
 
   constructor(private httpClient: HttpClient) {
   }
