@@ -7,7 +7,8 @@ import {Education} from "../model/education.model";
   providedIn: 'root'
 })
 export class EducationService {
-  URL = "http://localhost:8080/api/v1/education/";
+  // URL = "http://localhost:8080/api/v1/education/";
+  URL = "https://ap-front--2023-01-12--firebase.web.app/api/v1/education/";
 
   constructor(private httpClient: HttpClient) {
   }
