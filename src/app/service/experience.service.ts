@@ -8,7 +8,6 @@ import {Experience} from "../model/experience.model";
 })
 export class ExperienceService {
   // URL = "http://localhost:8080/api/v1/experience/";
-  // URL = "https://ap-front--2023-01-12--firebase.web.app/api/v1/experience/";
   URL = "https://ap-pbe-production.up.railway.app/api/v1/experience/";
 
   constructor(private httpClient: HttpClient) {

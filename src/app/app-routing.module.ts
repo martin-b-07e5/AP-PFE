@@ -26,7 +26,7 @@ const routes: Routes = [
   {path: 'experience-update/:id', component: ExperienceUpdateComponent},
   {path: 'education-create', component: EducationCreateComponent},
   {path: 'education-update/:id', component: EducationUpdateComponent},
-  // {path: '**', component: NotFoundComponent}  // below other routes
+  {path: '**', component: NotFoundComponent}  // below other routes
 ];
 
 @NgModule({

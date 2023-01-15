@@ -8,7 +8,6 @@ import {Person} from '../model/person.model';
 })
 export class PersonService {
   // URL = "http://localhost:8080/api/v1/person/";
-  // URL = "https://ap-front--2023-01-12--firebase.web.app/api/v1/person/";
   URL = "https://ap-pbe-production.up.railway.app/api/v1/person/";
 
   constructor(private http: HttpClient) {
