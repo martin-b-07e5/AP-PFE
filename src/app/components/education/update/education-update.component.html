@@ -1,29 +1,48 @@
 <div class="container" *ngIf="education">
   <div class="row">
-
     <div>
       <form (ngSubmit)="onUpdate()" novalidate>
-
+        <!--  -->
         <div class="form-group">
           <label for="name">Education Name</label>
-          <input type="text" class="form-control"
-                 id="name" name="name"
-                 [(ngModel)]="education.name" required>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            [(ngModel)]="education.name"
+            required
+          />
         </div>
 
         <div class="form-group">
           <label for="description">Education Description</label>
-          <input type="text" class="form-control"
-                 id="description" name="description"
-                 [(ngModel)]="education.description" required>
+          <input
+            type="text"
+            class="form-control"
+            id="description"
+            name="description"
+            [(ngModel)]="education.description"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="startedAt">Education startedAt</label>
+          <input
+            type="text"
+            class="form-control"
+            id="startedAt"
+            name="startedAt"
+            [(ngModel)]="education.startedAt"
+            required
+          />
         </div>
 
         <button class="btn btn-primary" style="margin-top: 0.8rem">
           Update
         </button>
-
       </form>
     </div>
-
   </div>
 </div>

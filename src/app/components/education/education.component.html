@@ -12,44 +12,52 @@ Extra extra large   xxl           ≥1400px
     <h1>Education</h1>
 
     <div class="col-lg-12">
-      <button type="button" class="btn btn-primary mb-2"
-              routerLink="/education-create"
-      >Add Education
+      <button
+        type="button"
+        class="btn btn-primary mb-2"
+        routerLink="/education-create"
+      >
+        Add Education
       </button>
 
       <table class="table table-striped mt-2">
         <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Name</th>
-          <th scope="col">Description</th>
-          <!--          <th scope="col" *ngIf="isLogged">Edit</th>-->
-          <th scope="col">Edit</th>
-          <!--          <th scope="col" *ngIf="isLogged">Delete</th>-->
-          <th scope="col">Delete</th>
-        </tr>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">StartedAt</th>
+            <!--          <th scope="col" *ngIf="isLogged">Edit</th>-->
+            <th scope="col">Edit</th>
+            <!--          <th scope="col" *ngIf="isLogged">Delete</th>-->
+            <th scope="col">Delete</th>
+          </tr>
         </thead>
         <tbody>
-        <tr *ngFor="let Education of educations">
-          <td>{{Education.id}}</td>
-          <td>{{Education.name}}</td>
-          <td>{{Education.description}}</td>
-          <td>
-            <button class="btn btn-sm btn-warning"
-                    routerLink="/education-update/{{Education.id}}"
-            ><i class="bi bi-pencil-fill"></i>
-            </button>
-          </td>
-          <td>
-            <button class="btn btn-sm btn-danger"
-                    (click)="delete(Education.id)">
-              <i class="bi bi-trash"></i>
-            </button>
-          </td>
-        </tr>
+          <tr *ngFor="let Education of educations">
+            <td>{{ Education.id }}</td>
+            <td>{{ Education.name }}</td>
+            <td>{{ Education.description }}</td>
+            <td>{{ Education.startedAt }}</td>
+            <td>
+              <button
+                class="btn btn-sm btn-warning"
+                routerLink="/education-update/{{ Education.id }}"
+              >
+                <i class="bi bi-pencil-fill"></i>
+              </button>
+            </td>
+            <td>
+              <button
+                class="btn btn-sm btn-danger"
+                (click)="delete(Education.id)"
+              >
+                <i class="bi bi-trash"></i>
+              </button>
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
-
   </div>
 </div>

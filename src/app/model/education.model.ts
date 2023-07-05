@@ -3,10 +3,11 @@ export class Education {
   id?: number;
   name: string;
   description: string;
+  startedAt?: Date;
 
-  constructor(name: string, description: string) {
+  constructor(name: string, description: string, startedAt?: Date) {
     this.name = name;
     this.description = description;
+    this.startedAt = startedAt;
   }
-
 }
