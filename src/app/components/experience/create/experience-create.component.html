@@ -1,29 +1,82 @@
 <div class="container">
   <div class="row">
-
     <div>
       <form (ngSubmit)="onCreate()" novalidate>
-
+        <!-- name -->
         <div class="form-group">
           <label for="name">Experience Name</label>
-          <input type="text" class="form-control"
-                 id="name" name="name"
-                 [(ngModel)]="name" required
-          >
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            [(ngModel)]="name"
+            required
+            placeholder="Input your experience name"
+          />
         </div>
 
+        <!-- description -->
         <div class="form-group">
           <label for="description">Experience Description</label>
-          <input type="text" class="form-control"
-                 id="description" name="description"
-                 [(ngModel)]="description" required
-          >
+          <input
+            type="text"
+            class="form-control"
+            id="description"
+            name="description"
+            [(ngModel)]="description"
+            required
+            placeholder="Input your experience description"
+          />
         </div>
 
-        <button class="btn btn-primary" style="margin-top: 0.8rem">Add</button>
+        <!-- startedAt -->
+        <div class="form-group">
+          <label for="startedAt">start</label>
+          <input
+            type="date"
+            class="form-control"
+            id="startedAt"
+            name="startedAt"
+            [(ngModel)]="experience.startedAt"
+            required
+            placeholder="YYYY-MM-DD for type='text'"
+          />
+        </div>
 
+        <!-- finishedAt -->
+        <div class="form-group">
+          <label for="finishedAt">start</label>
+          <input
+            type="date"
+            class="form-control"
+            id="finishedAt"
+            name="finishedAt"
+            [(ngModel)]="experience.finishedAt"
+            required
+            placeholder="YYYY-MM-DD for type='text'"
+          />
+        </div>
+
+        <!-- buttons -->
+        <!-- Add -->
+        <button
+          class="btn btn-primary"
+          style="margin-top: 0.8rem; margin-right: 0.2rem"
+          type="submit"
+        >
+          Add
+        </button>
+        <!-- Cancel -->
+        <button
+          class="btn btn-secondary"
+          style="margin-top: 0.8rem"
+          type="button"
+          (click)="onCancel()"
+        >
+          Cancel
+        </button>
       </form>
     </div>
-
   </div>
 </div>
