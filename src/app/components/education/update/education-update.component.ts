@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Education } from '../../../model/education.model';
 import { EducationService } from '../../../service/education.service';
-import { UiService } from '../../../service/ui.service';
 
 @Component({
   selector: 'app-education-update',

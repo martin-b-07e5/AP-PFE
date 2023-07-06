@@ -3,7 +3,7 @@
   <div class="row">
     <div>
       <form (ngSubmit)="onCreate()" novalidate>
-        <!--  -->
+        <!-- name -->
         <div class="form-group">
           <label for="name">Education Name</label>
           <input
@@ -16,6 +16,7 @@
           />
         </div>
 
+        <!-- description -->
         <div class="form-group">
           <label for="description">Description</label>
           <input
@@ -28,6 +29,7 @@
           />
         </div>
 
+        <!-- startedAt -->
         <div class="form-group">
           <label for="startedAt">start</label>
           <input
@@ -37,7 +39,21 @@
             name="startedAt"
             [(ngModel)]="education.startedAt"
             required
-            placeholder="YYYY-MM-DD"
+            placeholder="YYYY-MM-DD for type='text'"
+          />
+        </div>
+
+        <!-- finishedAt -->
+        <div class="form-group">
+          <label for="finishedAt">start</label>
+          <input
+            type="date"
+            class="form-control"
+            id="finishedAt"
+            name="finishedAt"
+            [(ngModel)]="education.finishedAt"
+            required
+            placeholder="YYYY-MM-DD for type='text'"
           />
         </div>
 

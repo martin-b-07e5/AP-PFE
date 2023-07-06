@@ -23,7 +23,7 @@ Extra extra large   xxl           ≥1400px
       <table class="table table-striped mt-2">
         <thead>
           <tr>
-            <th scope="col">#</th>
+            <!-- <th scope="col">#</th> -->
             <th scope="col">Name</th>
             <th scope="col">Description</th>
             <!-- StartedAt -->
@@ -39,12 +39,13 @@ Extra extra large   xxl           ≥1400px
         </thead>
         <tbody>
           <tr *ngFor="let Education of educations">
-            <td>{{ Education.id }}</td>
+            <!-- <td>{{ Education.id }}</td> -->
             <td>{{ Education.name }}</td>
             <td>{{ Education.description }}</td>
             <td>{{ Education.startedAt }}</td>
             <td>{{ Education.finishedAt }}</td>
             <td>
+              <!-- edit -->
               <button
                 class="btn btn-sm btn-warning"
                 routerLink="/education-update/{{ Education.id }}"
@@ -53,6 +54,7 @@ Extra extra large   xxl           ≥1400px
               </button>
             </td>
             <td>
+              <!-- delete -->
               <button
                 class="btn btn-sm btn-danger"
                 (click)="delete(Education.id)"
