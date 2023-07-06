@@ -16,7 +16,7 @@ export class EducationComponent implements OnInit {
     private educationService: EducationService,
     private uiService: UiService
   ) {
-    this.findAllEducation();
+    this.findAll();
     uiService.toggleAddTask(); // working on this service
   }
 
@@ -30,7 +30,7 @@ export class EducationComponent implements OnInit {
     // }
   }
 
-  findAllEducation(): void {
+  findAll(): void {
     this.educationService.findAll().subscribe((next) => {
       this.educations = next;
     });
@@ -43,11 +43,11 @@ export class EducationComponent implements OnInit {
       this.educationService.delete(id).subscribe(
         (next) => {
           alert(id + ' is deleted.');
-          this.findAllEducation();
+          this.findAll();
         },
         (error) => {
           console.log('Error deleting education ' + id + '.');
-          this.findAllEducation();
+          this.findAll();
         }
       );
     }
