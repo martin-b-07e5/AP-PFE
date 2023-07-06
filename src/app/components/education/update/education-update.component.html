@@ -2,7 +2,7 @@
   <div class="row">
     <div>
       <form (ngSubmit)="onUpdate()" novalidate>
-        <!--  -->
+        <!-- Name -->
         <div class="form-group">
           <label for="name">Education Name</label>
           <input
@@ -12,9 +12,11 @@
             name="name"
             [(ngModel)]="education.name"
             required
+            placeholder="Input your Education name"
           />
         </div>
 
+        <!-- Description -->
         <div class="form-group">
           <label for="description">Education Description</label>
           <input
@@ -24,6 +26,7 @@
             name="description"
             [(ngModel)]="education.description"
             required
+            placeholder="Input your Education description"
           />
         </div>
 
@@ -56,6 +59,7 @@
         </div>
 
         <!-- buttons -->
+        <!-- Update -->
         <button
           class="btn btn-primary"
           style="margin-top: 0.8rem; margin-right: 0.2rem"
@@ -63,6 +67,7 @@
           Update
         </button>
 
+        <!-- Cancel -->
         <button
           class="btn btn-secondary"
           style="margin-top: 0.8rem"

@@ -1,29 +1,82 @@
 <div class="container" *ngIf="experience">
   <div class="row">
-
     <div>
       <form (ngSubmit)="onUpdate()" novalidate>
-
+        <!-- Name -->
         <div class="form-group">
           <label for="name">Experience Name</label>
-          <input type="text" class="form-control"
-                 id="name" name="name"
-                 [(ngModel)]="experience.name" required>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            [(ngModel)]="experience.name"
+            required
+            placeholder="Input your Experience name"
+          />
         </div>
 
+        <!-- Description -->
         <div class="form-group">
           <label for="description">Experience Description</label>
-          <input type="text" class="form-control"
-                 id="description" name="description"
-                 [(ngModel)]="experience.description" required>
+          <input
+            type="text"
+            class="form-control"
+            id="description"
+            name="description"
+            [(ngModel)]="experience.description"
+            required
+            placeholder="Input your Experience description"
+          />
         </div>
 
-        <button class="btn btn-primary" style="margin-top: 0.8rem">
-          Update experience
+        <!-- startedAt -->
+        <div class="form-group">
+          <label for="startedAt">Education startedAt</label>
+          <input
+            type="date"
+            class="form-control"
+            id="startedAt"
+            name="startedAt"
+            [(ngModel)]="experience.startedAt"
+            required
+            placeholder="YYYY-MM-DD for type='text'"
+          />
+        </div>
+
+        <!-- finishedAt -->
+        <div class="form-group">
+          <label for="finishedAt">Education finishedAt</label>
+          <input
+            type="date"
+            class="form-control"
+            id="finishedAt"
+            name="finishedAt"
+            [(ngModel)]="experience.finishedAt"
+            required
+            placeholder="YYYY-MM-DD for type='text'"
+          />
+        </div>
+
+        <!-- buttons -->
+        <!-- Update -->
+        <button
+          class="btn btn-primary"
+          style="margin-top: 0.8rem; margin-right: 0.2rem"
+        >
+          Update
         </button>
 
+        <!-- Cancel -->
+        <button
+          class="btn btn-secondary"
+          style="margin-top: 0.8rem"
+          type="button"
+          (click)="onCancel()"
+        >
+          Cancel
+        </button>
       </form>
     </div>
-
   </div>
 </div>
