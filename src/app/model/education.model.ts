@@ -4,10 +4,17 @@ export class Education {
   name: string;
   description: string;
   startedAt?: Date;
+  finishedAt?: Date;
 
-  constructor(name: string, description: string, startedAt?: Date) {
+  constructor(
+    name: string,
+    description: string,
+    startedAt?: Date,
+    finishedAt?: Date
+  ) {
     this.name = name;
     this.description = description;
     this.startedAt = startedAt;
+    this.finishedAt = finishedAt;
   }
 }

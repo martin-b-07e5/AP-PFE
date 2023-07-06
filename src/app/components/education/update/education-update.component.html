@@ -27,20 +27,49 @@
           />
         </div>
 
+        <!-- startedAt -->
         <div class="form-group">
           <label for="startedAt">Education startedAt</label>
           <input
-            type="text"
+            type="date"
             class="form-control"
             id="startedAt"
             name="startedAt"
             [(ngModel)]="education.startedAt"
             required
+            placeholder="YYYY-MM-DD for type='text'"
           />
         </div>
 
-        <button class="btn btn-primary" style="margin-top: 0.8rem">
+        <!-- finishedAt -->
+        <div class="form-group">
+          <label for="finishedAt">Education finishedAt</label>
+          <input
+            type="date"
+            class="form-control"
+            id="finishedAt"
+            name="finishedAt"
+            [(ngModel)]="education.finishedAt"
+            required
+            placeholder="YYYY-MM-DD for type='text'"
+          />
+        </div>
+
+        <!-- buttons -->
+        <button
+          class="btn btn-primary"
+          style="margin-top: 0.8rem; margin-right: 0.2rem"
+        >
           Update
+        </button>
+
+        <button
+          class="btn btn-secondary"
+          style="margin-top: 0.8rem"
+          type="button"
+          (click)="onCancel()"
+        >
+          Cancel
         </button>
       </form>
     </div>

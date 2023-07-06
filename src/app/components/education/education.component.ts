@@ -1,24 +1,26 @@
-import {Component, OnInit} from '@angular/core';
-import {Education} from "../../model/education.model";
-import {EducationService} from "../../service/education.service";
-import {UiService} from "../../service/ui.service";
+import { Component, OnInit } from '@angular/core';
+import { Education } from '../../model/education.model';
+import { EducationService } from '../../service/education.service';
+import { UiService } from '../../service/ui.service';
 
 @Component({
   selector: 'app-education',
   templateUrl: './education.component.html',
-  styleUrls: ['./education.component.css']
+  styleUrls: ['./education.component.css'],
 })
 export class EducationComponent implements OnInit {
-
   educations: Education[] = [];
 
   // constructor(private educationService: EducationService, private tokenService: TokenService) {
-  constructor(private educationService: EducationService, private uiService: UiService) {
+  constructor(
+    private educationService: EducationService,
+    private uiService: UiService
+  ) {
     this.findAllEducation();
-    uiService.toggleAddTask();  // working on this service
+    uiService.toggleAddTask(); // working on this service
   }
 
-  isLogged: boolean = false;  // working
+  isLogged: boolean = false; // working
 
   ngOnInit(): void {
     // if (this.tokenService.getToken()) {
@@ -29,24 +31,25 @@ export class EducationComponent implements OnInit {
   }
 
   findAllEducation(): void {
-    this.educationService.findAll().subscribe(
-      next => {
-        this.educations = next;
-      });
+    this.educationService.findAll().subscribe((next) => {
+      this.educations = next;
+    });
   }
 
   // delete education
   delete(id?: number) {
-    this.educationService.delete(id).subscribe(
-      next => {
-        alert(id + "no entra acá!!");
-        this.findAllEducation();
-      },
-      error => {
-        console.log("education " + id + ": deleted");
-        this.findAllEducation();
-      })
+    const confirmation = confirm('Are you sure you want to delete this item?');
+    if (confirmation) {
+      this.educationService.delete(id).subscribe(
+        (next) => {
+          alert(id + ' is deleted.');
+          this.findAllEducation();
+        },
+        (error) => {
+          console.log('Error deleting education ' + id + '.');
+          this.findAllEducation();
+        }
+      );
+    }
   }
-
-
 }

@@ -26,10 +26,14 @@ Extra extra large   xxl           ≥1400px
             <th scope="col">#</th>
             <th scope="col">Name</th>
             <th scope="col">Description</th>
-            <th scope="col">StartedAt</th>
-            <!--          <th scope="col" *ngIf="isLogged">Edit</th>-->
+            <!-- StartedAt -->
+            <th scope="col">Start</th>
+            <!-- finishedAt -->
+            <th scope="col">End</th>
+            <!--  -->
+            <!--<th scope="col" *ngIf="isLogged">Edit</th>-->
             <th scope="col">Edit</th>
-            <!--          <th scope="col" *ngIf="isLogged">Delete</th>-->
+            <!--<th scope="col" *ngIf="isLogged">Delete</th>-->
             <th scope="col">Delete</th>
           </tr>
         </thead>
@@ -39,6 +43,7 @@ Extra extra large   xxl           ≥1400px
             <td>{{ Education.name }}</td>
             <td>{{ Education.description }}</td>
             <td>{{ Education.startedAt }}</td>
+            <td>{{ Education.finishedAt }}</td>
             <td>
               <button
                 class="btn btn-sm btn-warning"

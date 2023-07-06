@@ -12,6 +12,7 @@ export class EducationCreateComponent implements OnInit {
   name: string = '';
   description: string = '';
   startedAt: Date = null;
+  finishedAt: Date = null;
   education: Education = new Education('', '', null);
 
   constructor(
@@ -28,23 +29,23 @@ export class EducationCreateComponent implements OnInit {
     const education = new Education(
       this.name,
       this.description,
-      this.education.startedAt
+      this.education.startedAt,
+      this.education.finishedAt
     );
 
     // add WITH some validation
     this.educationService.add(education).subscribe(
       (next) => {
-        this.router.navigate(['']).then((r) => r);
+        this.router.navigate(['']).then((r) => r); // Redirects to home page.
       },
       (error) => {
         alert('add Education Failed');
-        // this.router.navigate(['']).then(r => r);
+        // this.router.navigate(['']).then((r) => r);
       }
     );
   }
 
   onCancel(): void {
-    // Redireccionar a la página principal o realizar otras acciones de cancelación
-    this.router.navigate(['']).then((r) => r);
+    this.router.navigate(['']).then((r) => r); // Redirects to home page.
   }
 }

@@ -36,11 +36,15 @@ export class EducationUpdateComponent implements OnInit {
     const id = this.activatedRoute.snapshot.params['id'];
     this.educationService.update(id, this.education).subscribe(
       (next) => {
-        this.router.navigate(['']).then((r) => r);
+        this.router.navigate(['']).then((r) => r); // Redirects to home page.
       },
       (error) => {
         alert('Update error.');
       }
     );
+  }
+
+  onCancel(): void {
+    this.router.navigate(['']).then((r) => r); // Redirects to home page.
   }
 }
